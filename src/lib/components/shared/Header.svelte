@@ -1,19 +1,27 @@
 <script lang="ts">
 	import { header_nav, header_side_nav, header_languages, header_currencies, header_account, header_top_nav } from "../../../stores/HeaderStore";
+    import { side_menu } from "../../../stores/HandEvenStore";
     import { PUBLIC_NAME, PUBLIC_LOGO, PUBLIC_PHONE_NUMBER } from "$env/static/public"; 
+    import { navigating, page } from '$app/stores';
 
     let cart_is_open:boolean = false;
     let cart_list_is_open:boolean = false;
-    let side_menu_is_open:boolean = true;
+    // let side_menu_is_open:boolean = true;
 
     // function
+    $page.url.pathname == '/' ? $side_menu.is_open = true : $side_menu.is_open = false;
+    $: if($navigating) $page.url.pathname == '/' ? $side_menu.is_open = true : $side_menu.is_open = false;
+
     const toggle_cart = () => {
         cart_is_open = !cart_is_open;
         setTimeout(() => {
             cart_list_is_open = !cart_list_is_open;
         }, 10)
     }
-    const toggle_side_menu = () => side_menu_is_open = !side_menu_is_open;
+
+    const toggle_side_menu = () => {
+        $side_menu.is_open = !$side_menu.is_open;
+    }
 </script>
 
 <main>
@@ -33,7 +41,7 @@
                         <div class="topbar__item">
                             <div class="topbar-dropdown"><button class="topbar-dropdown__btn" type="button">My
                                     Account <svg width="7px" height="5px">
-                                        <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                        <use xlink:href="/images/sprite.svg#arrow-rounded-down-7x5"></use>
                                     </svg></button>
                                 <div class="topbar-dropdown__body">
                                     <!-- .menu -->
@@ -63,7 +71,7 @@
                             <div class="topbar-dropdown"><button class="topbar-dropdown__btn"
                                     type="button">Currency: <span class="topbar__item-value">NGN</span> <svg
                                         width="7px" height="5px">
-                                        <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                        <use xlink:href="/images/sprite.svg#arrow-rounded-down-7x5"></use>
                                     </svg></button>
                                 <div class="topbar-dropdown__body">
                                     <!-- .menu -->
@@ -87,7 +95,7 @@
                             <div class="topbar-dropdown"><button class="topbar-dropdown__btn"
                                     type="button">Language: <span class="topbar__item-value">EN</span> <svg
                                         width="7px" height="5px">
-                                        <use xlink:href="images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                        <use xlink:href="/images/sprite.svg#arrow-rounded-down-7x5"></use>
                                     </svg></button>
                                 <div class="topbar-dropdown__body">
                                     <!-- .menu -->
@@ -131,7 +139,7 @@
                                     placeholder="Search over 10,000 products" aria-label="Site search" type="text"
                                     autocomplete="off"> <button class="search__button search__button--type--submit"
                                     type="submit"><svg width="20px" height="20px">
-                                        <use xlink:href="images/sprite.svg#search-20"></use>
+                                        <use xlink:href="/images/sprite.svg#search-20"></use>
                                     </svg></button>
                                 <div class="search__border"></div>
                             </form>
@@ -151,12 +159,13 @@
                         <div class="nav-panel__row">
                             <div class="nav-panel__departments">
                                 <!-- .departments -->
-                                <div class="departments departments--open departments--fixed"
+                                <div class="departments departments--open "
                                     data-departments-fixed-by=".block-slideshow">
                                     <div class="departments__body">
                                         <div class="departments__links-wrapper" 
                                             style="
-                                                max-height: {side_menu_is_open ? '900px' : '0'};
+                                                height: 415px;
+                                                max-height: {$side_menu.is_open ? '415px' : '0'};
                                                 transition: max-height 500ms ease;
                                             "
                                         >
@@ -170,12 +179,12 @@
                                                     {#each $header_side_nav as side_nav (side_nav.id)}
                                                         <li class="departments__item">
                                                             <a class="departments__item-link"
-                                                                href="javascript;:">{ side_nav.name }
+                                                                href="{side_nav.url}">{ side_nav.name }
                                                                 {#if side_nav.sub_menu}
                                                                     <svg class="departments__item-arrow"
                                                                         width="6px" height="9px">
                                                                         <use
-                                                                            xlink:href="images/sprite.svg#arrow-rounded-right-6x9">
+                                                                            xlink:href="/images/sprite.svg#arrow-rounded-right-6x9">
                                                                         </use>
                                                                     </svg>
                                                                 {/if}
@@ -196,12 +205,12 @@
                                                                                                 {#if sub_menu.inner_sub}
                                                                                                     <li
                                                                                                         class="megamenu__item megamenu__item--with-submenu">
-                                                                                                        <a href="javascript;:">{sub_menu.name}</a>
+                                                                                                        <a href="{sub_menu.url}">{sub_menu.name}</a>
                                                                                                         <ul
                                                                                                             class="megamenu__links megamenu__links--level--1">
                                                                                                             {#each sub_menu.drop_menu as drop_menu (drop_menu.name)}
                                                                                                                 <li class="megamenu__item"><a
-                                                                                                                        href="javascript;:">{ drop_menu.name }</a>
+                                                                                                                        href="{drop_menu.url}">{ drop_menu.name }</a>
                                                                                                                 </li>   
                                                                                                             {/each}
                                                                                                         </ul>
@@ -209,7 +218,7 @@
                                                                                                 {:else}
                                                                                                     <li class="megamenu__item">
                                                                                                         <a
-                                                                                                            href="javascript;:">{sub_menu.name}</a>
+                                                                                                            href="{sub_menu.url}">{sub_menu.name}</a>
                                                                                                         </li>
                                                                                                 {/if}
                                                                                             </ul>
@@ -220,12 +229,12 @@
                                                                                                 class="megamenu__links megamenu__links--level--0">
                                                                                                 <li
                                                                                                     class="megamenu__item megamenu__item--with-submenu">
-                                                                                                    <a href="javascript;:">{sub_menu.name}</a>
+                                                                                                    <a href="{sub_menu.url}">{sub_menu.name}</a>
                                                                                                     <ul
                                                                                                         class="megamenu__links megamenu__links--level--1">
                                                                                                         {#each sub_menu.drop_menu as drop_menu (drop_menu.name)}
                                                                                                             <li class="megamenu__item"><a
-                                                                                                                    href="javascript;:">Screwdrivers</a>
+                                                                                                                    href="{drop_menu.url}">{drop_menu.name}</a>
                                                                                                             </li>
                                                                                                         {/each}
                                                                                                     </ul>
@@ -255,7 +264,7 @@
                                                                                             <svg class="menu__item-arrow"
                                                                                                 width="6px" height="9px">
                                                                                                 <use
-                                                                                                    xlink:href="images/sprite.svg#arrow-rounded-right-6x9">
+                                                                                                    xlink:href="/images/sprite.svg#arrow-rounded-right-6x9">
                                                                                                 </use>
                                                                                             </svg>
                                                                                         {/if}
@@ -296,15 +305,15 @@
                                     </div>
                                     <button class="departments__button" on:click={toggle_side_menu}><svg class="departments__button-icon"
                                             width="18px" height="14px">
-                                            <use xlink:href="images/sprite.svg#menu-18x14"></use>
+                                            <use xlink:href="/images/sprite.svg#menu-18x14"></use>
                                         </svg> Shop By Category <svg class="departments__button-arrow" 
                                             style="
-                                                transform: rotate({side_menu_is_open ? '0deg' : '180deg'});
+                                                transform: rotate({$side_menu.is_open ? '0deg' : '180deg'});
                                                 transition: transform 500ms;
                                             "
                                             width="9px"
                                             height="6px">
-                                            <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6"></use>
+                                            <use xlink:href="/images/sprite.svg#arrow-rounded-down-9x6"></use>
                                         </svg></button>
                                 </div>
                                 <!-- .departments / end -->
@@ -315,12 +324,12 @@
                                     {#each $header_nav as nav (nav.id)}
                                         {#if nav.layout == 1}
                                             <li class="nav-links__item nav-links__item--has-submenu">
-                                                <a class="nav-links__item-link" href="index.html">
+                                                <a class="nav-links__item-link" href="{nav.url}">
                                                     <div class="nav-links__item-body">{nav.name} 
                                                         {#if nav.sub_menu}
                                                             <svg
                                                                 class="nav-links__item-arrow" width="9px" height="6px">
-                                                                <use xlink:href="images/sprite.svg#arrow-rounded-down-9x6">
+                                                                <use xlink:href="/images/sprite.svg#arrow-rounded-down-9x6">
                                                                 </use>
                                                             </svg>
                                                         {/if}
@@ -351,14 +360,14 @@
                             </div>
                             <!-- .nav-links / end -->
                             <div class="nav-panel__indicators">
-                                <div class="indicator"><a href="wishlist.html" class="indicator__button"><span
+                                <div class="indicator"><a href="/wishlist" class="indicator__button"><span
                                             class="indicator__area"><svg width="20px" height="20px">
-                                                <use xlink:href="images/sprite.svg#heart-20"></use>
+                                                <use xlink:href="/images/sprite.svg#heart-20"></use>
                                             </svg> <span class="indicator__value">0</span></span></a></div>
                                 <div class="indicator"><button on:click={toggle_cart}
                                         class="indicator__button"><span class="indicator__area"><svg width="20px"
                                                 height="20px">
-                                                <use xlink:href="images/sprite.svg#cart-20"></use>
+                                                <use xlink:href="/images/sprite.svg#cart-20"></use>
                                             </svg> <span class="indicator__value">3</span></span></button>
                                         {#if cart_is_open}
                                             <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -404,7 +413,7 @@
                                                                 <button type="button" on:click={toggle_cart}
                                                                 class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"><svg
                                                                     width="20px" height="20px">
-                                                                    <use xlink:href="images/sprite.svg#cross-20"></use>
+                                                                    <use xlink:href="/images/sprite.svg#cross-20"></use>
                                                                 </svg></button>
                                                             </h3>
                                                             <hr>
@@ -414,7 +423,7 @@
                                                         <div class="dropcart__product">
                                                             <div class="dropcart__product-image"><a
                                                                     href="product.html"><img
-                                                                        src="images/products/product-1.jpg" alt=""></a>
+                                                                        src="/images/products/product-1.jpg" alt=""></a>
                                                             </div>
                                                             <div class="dropcart__product-info">
                                                                 <div class="dropcart__product-name" style="color: black"><a
@@ -431,13 +440,13 @@
                                                             </div><button type="button"
                                                                 class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"><svg
                                                                     width="10px" height="10px">
-                                                                    <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                                    <use xlink:href="/images/sprite.svg#cross-10"></use>
                                                                 </svg></button>
                                                         </div>
                                                         <div class="dropcart__product">
                                                             <div class="dropcart__product-image"><a
                                                                     href="product.html"><img
-                                                                        src="images/products/product-1.jpg" alt=""></a>
+                                                                        src="/images/products/product-1.jpg" alt=""></a>
                                                             </div>
                                                             <div class="dropcart__product-info">
                                                                 <div class="dropcart__product-name" style="color: black"><a
@@ -454,7 +463,7 @@
                                                             </div><button type="button"
                                                                 class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"><svg
                                                                     width="10px" height="10px">
-                                                                    <use xlink:href="images/sprite.svg#cross-10"></use>
+                                                                    <use xlink:href="/images/sprite.svg#cross-10"></use>
                                                                 </svg></button>
                                                         </div>
                                                     </div>
@@ -480,8 +489,8 @@
                                                             </table>
                                                         </div>
                                                         <div class="dropcart__buttons"><a class="btn btn-secondary"
-                                                                href="cart.html">View Cart</a> <a class="btn btn-primary"
-                                                                href="checkout.html">Checkout</a>
+                                                                href="/cart">View Cart</a> <a class="btn btn-primary"
+                                                                href="/cart">Checkout</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -492,7 +501,7 @@
                                     <div class="indicator indicator--trigger--click"><a href="account-login.html"
                                             class="indicator__button"><span class="indicator__area"><svg width="20px"
                                                     height="20px">
-                                                    <use xlink:href="images/sprite.svg#person-20"></use>
+                                                    <use xlink:href="/images/sprite.svg#person-20"></use>
                                                 </svg></span></a>
                                         <div class="indicator__dropdown">
                                             <div class="account-menu">
@@ -520,7 +529,7 @@
                                                 <div class="account-menu__divider"></div>
                                                 <a href="account-dashboard.html" class="account-menu__user">
                                                     <div class="account-menu__user-avatar"><img
-                                                            src="images/avatars/avatar-3.jpg" alt=""></div>
+                                                            src="/images/avatars/avatar-3.jpg" alt=""></div>
                                                     <div class="account-menu__user-info">
                                                         <div class="account-menu__user-name">Helena Garcia</div>
                                                         <div class="account-menu__user-email">stroyka@example.com</div>

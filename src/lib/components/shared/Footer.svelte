@@ -105,7 +105,7 @@
                 <div class="site-footer__bottom">
                     <div class="site-footer__copyright">Powered by HTML — Design by <a
                             href="https://themeforest.net/user/kos9" target="_blank">Kos</a></div>
-                    <div class="site-footer__payments"><img src="images/payments.png" alt=""></div>
+                    <div class="site-footer__payments"><img src="/images/payments.png" alt=""></div>
                 </div>
             </div>
             <div class="totop">
@@ -114,7 +114,7 @@
                     <div class="totop__container container"></div>
                     <div class="totop__end"><button type="button" class="totop__button"><svg width="13px"
                                 height="8px">
-                                <use xlink:href="images/sprite.svg#arrow-rounded-up-13x8"></use>
+                                <use xlink:href="/images/sprite.svg#arrow-rounded-up-13x8"></use>
                             </svg></button></div>
                 </div>
             </div>

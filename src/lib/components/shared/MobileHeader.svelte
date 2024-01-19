@@ -12,7 +12,7 @@
                 <div class="container">
                     <div class="mobile-header__body"><button class="mobile-header__menu-button"><svg width="18px"
                                 height="14px">
-                                <use xlink:href="images/sprite.svg#menu-18x14"></use>
+                                <use xlink:href="/images/sprite.svg#menu-18x14"></use>
                             </svg></button> <a class="mobile-header__logo" href="index.html"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="120px" height="20px">
                                 <path d="M118.5,20h-1.1c-0.6,0-1.2-0.4-1.4-1l-1.5-4h-6.1l-1.5,4c-0.2,0.6-0.8,1-1.4,1h-1.1c-1,0-1.8-1-1.4-2l1.1-3
@@ -40,10 +40,10 @@
                                         type="text" autocomplete="off"> <button
                                         class="search__button search__button--type--submit" type="submit"><svg
                                             width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#search-20"></use>
+                                            <use xlink:href="/images/sprite.svg#search-20"></use>
                                         </svg></button> <button class="search__button search__button--type--close"
                                         type="button"><svg width="20px" height="20px">
-                                            <use xlink:href="images/sprite.svg#cross-20"></use>
+                                            <use xlink:href="/images/sprite.svg#cross-20"></use>
                                         </svg></button>
                                     <div class="search__border"></div>
                                 </form>
@@ -55,17 +55,17 @@
                             <div class="indicator indicator--mobile-search indicator--mobile d-md-none"><button
                                     class="indicator__button"><span class="indicator__area"><svg width="20px"
                                             height="20px">
-                                            <use xlink:href="images/sprite.svg#search-20"></use>
+                                            <use xlink:href="/images/sprite.svg#search-20"></use>
                                         </svg></span></button></div>
                             <div class="indicator indicator--mobile d-sm-flex d-none"><a href="wishlist.html"
                                     class="indicator__button"><span class="indicator__area"><svg width="20px"
                                             height="20px">
-                                            <use xlink:href="images/sprite.svg#heart-20"></use>
+                                            <use xlink:href="/images/sprite.svg#heart-20"></use>
                                         </svg> <span class="indicator__value">0</span></span></a></div>
                             <div class="indicator indicator--mobile"><a href="cart.html"
                                     class="indicator__button"><span class="indicator__area"><svg width="20px"
                                             height="20px">
-                                            <use xlink:href="images/sprite.svg#cart-20"></use>
+                                            <use xlink:href="/images/sprite.svg#cart-20"></use>
                                         </svg> <span class="indicator__value">3</span></span></a></div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
             <div class="mobilemenu__header">
                 <div class="mobilemenu__title">Menu</div><button type="button" class="mobilemenu__close"><svg
                         width="20px" height="20px">
-                        <use xlink:href="images/sprite.svg#cross-20"></use>
+                        <use xlink:href="/images/sprite.svg#cross-20"></use>
                     </svg></button>
             </div>
             <div class="mobilemenu__content">
@@ -93,7 +93,7 @@
                                 {#if nav.sub_menu}
                                     <button class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
                                             class="mobile-links__item-arrow" width="12px" height="7px">
-                                            <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                            <use xlink:href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
                                         </svg></button>
                                 {/if}
                             </div>
@@ -116,7 +116,7 @@
                                 class="mobile-links__item-link">Currency</a> <button class="mobile-links__item-toggle"
                                 type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
                                     height="7px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                    <use xlink:href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
                                 </svg></button></div>
                         <div class="mobile-links__item-sub-links" data-collapse-content>
                             <ul class="mobile-links mobile-links--level--1">
@@ -133,7 +133,7 @@
                                 class="mobile-links__item-link">Language</a> <button class="mobile-links__item-toggle"
                                 type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
                                     height="7px">
-                                    <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                    <use xlink:href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
                                 </svg></button></div>
                         <div class="mobile-links__item-sub-links" data-collapse-content>
                             <ul class="mobile-links mobile-links--level--1">

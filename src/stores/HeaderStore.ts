@@ -6,16 +6,16 @@ const header_nav = writable([
         id: 1,
         layout: 1,
         name: "Home", 
-        url: "javascript;:",
+        url: "/",
         sub_menu: true,
         sub_menu_list: [
             {
                 name: "Home 1",
-                url: "javascript;:",
+                url: "/",
             },
             {
                 name: "Home 2",
-                url: "javascript;:",
+                url: "/",
             },
         ], 
     },
@@ -23,7 +23,7 @@ const header_nav = writable([
         id: 2,
         layout: 1,
         name: "Shop", 
-        url: "javascript;:",
+        url: "/shop",
         sub_menu: false,
         sub_menu_list: [
             {
@@ -64,20 +64,20 @@ const header_side_nav = writable([
     { 
         id: 1,
         name: "Headsets", 
-        url: "",
+        url: "/shop/1",
         is_grid: true,
         sub_menu: true,
         sub_menu_list: [
             {
                 id: 1,
                 name: "Ipad",
-                url: "javascript;:",
+                url: "/shop/1",
                 inner_sub: true,
                 layout: 1,
                 drop_menu: [
                     {
                         name: "Book",
-                        url: "javascript;:"
+                        url: "/shop/1"
                     },
                 ]
             },
@@ -86,20 +86,20 @@ const header_side_nav = writable([
     { 
         id: 2,
         name: "Laptop Skins", 
-        url: "",
+        url: "/shop/1",
         is_grid: false,
         sub_menu: false,
         sub_menu_list: [
             {
                 id: 2,
                 name: "",
-                url: "javascript;:",
+                url: "/shop/1",
                 inner_sub: false,
                 layout: 2,
                 drop_menu: [
                     {
                         name: "Book",
-                        url: "javascript;:"
+                        url: "/shop/1"
                     },
                 ]
             },
@@ -111,8 +111,8 @@ const header_languages = writable([
     { 
         name: "English", 
         abbreviation: "EN",
-        icon: "images/languages/language-1.png",
-        icon_subset: "images/languages/language-1.png, images/languages/language-1@2x.png 2x",
+        icon: "/images/languages/language-1.png",
+        icon_subset: "/images/languages/language-1.png, images/languages/language-1@2x.png 2x",
         selected: false,
     },
 ])
@@ -126,7 +126,7 @@ const header_currencies = writable([
         selected: true,
     },
     { 
-        name: "US Dollar",
+        name: "US Dollar",  
         country: "United State Of America", 
         abbreviation: "USA",
         sign: "$",
@@ -138,27 +138,27 @@ const header_account = writable([
     { 
         id: 1,
         name: "Dashboard", 
-        url: "javascript;:",
+        url: "/dashboard",
     },
     { 
         id: 2,
         name: "Edit Profile", 
-        url: "javascript;:",
+        url: "/edit-profile",
     },
     { 
         id: 3,
         name: "Order History", 
-        url: "javascript;:",
+        url: "/order-history",
     },
     { 
         id: 4,
         name: "Addresses", 
-        url: "javascript;:",
+        url: "/address",
     },
     { 
         id: 5,
         name: "Password", 
-        url: "javascript;:",
+        url: "/edit-password",
     },
 ])
 
