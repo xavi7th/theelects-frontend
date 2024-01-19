@@ -13,7 +13,7 @@
                     <div class="mobile-header__body"><button class="mobile-header__menu-button"><svg width="18px"
                                 height="14px">
                                 <use xlink:href="/images/sprite.svg#menu-18x14"></use>
-                            </svg></button> <a class="mobile-header__logo" href="index.html"><svg
+                            </svg></button> <a class="mobile-header__logo" href="/"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="120px" height="20px">
                                 <path d="M118.5,20h-1.1c-0.6,0-1.2-0.4-1.4-1l-1.5-4h-6.1l-1.5,4c-0.2,0.6-0.8,1-1.4,1h-1.1c-1,0-1.8-1-1.4-2l1.1-3
                              l1.5-4l3.6-10c0.2-0.6,0.8-1,1.4-1h1.6c0.6,0,1.2,0.4,1.4,1l3.6,10l1.5,4l1.1,3C120.3,19,119.5,20,118.5,20z M111.5,6.6l-1.6,4.4
@@ -57,12 +57,12 @@
                                             height="20px">
                                             <use xlink:href="/images/sprite.svg#search-20"></use>
                                         </svg></span></button></div>
-                            <div class="indicator indicator--mobile d-sm-flex d-none"><a href="wishlist.html"
+                            <div class="indicator indicator--mobile d-sm-flex d-none"><a href="/wishlist"
                                     class="indicator__button"><span class="indicator__area"><svg width="20px"
                                             height="20px">
                                             <use xlink:href="/images/sprite.svg#heart-20"></use>
                                         </svg> <span class="indicator__value">0</span></span></a></div>
-                            <div class="indicator indicator--mobile"><a href="cart.html"
+                            <div class="indicator indicator--mobile"><a href="/cart"
                                     class="indicator__button"><span class="indicator__area"><svg width="20px"
                                             height="20px">
                                             <use xlink:href="/images/sprite.svg#cart-20"></use>
@@ -102,7 +102,7 @@
                                     <ul class="mobile-links mobile-links--level--1">
                                         {#each nav.sub_menu_list as sub_menu (sub_menu.name)}
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href="javascript;:"
+                                                <div class="mobile-links__item-title"><a href="{sub_menu.url}"
                                                         class="mobile-links__item-link">{sub_menu.name}</a></div>
                                             </li>
                                         {/each}
