@@ -1,8 +1,14 @@
 <script lang="ts">
     import { side_menu } from "../../../stores/HandEvenStore";
+    
 </script>
+
+<svelte:head>
+    <script async src="/js/main.js"></script>
+</svelte:head>
+
 <!-- .block-slideshow -->
-<div class="block-slideshow block-slideshow--layout--with-departments block">
+<div class="block-slideshow block-slideshow--layout--with-departments">
     <div class="container">
         <div class="row">
             <div class="d-none d-lg-block" class:col-lg-3={$side_menu.is_open}></div>

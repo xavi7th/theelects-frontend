@@ -1,7 +1,17 @@
+<!-- svelte-ignore a11y-missing-attribute -->
 <script lang="ts">
     import Header from "$lib/components/shared/Header.svelte";
     import MobileHeader from "$lib/components/shared/MobileHeader.svelte";
     import Footer from "$lib/components/shared/Footer.svelte";
+    import { onMount, beforeUpdate } from 'svelte';
+    import { oldPage, currentPage } from '../stores/ChangeStore';
+
+    beforeUpdate(() => {
+        if ($oldPage !== $currentPage) {
+            console.log('red');
+            currentPage.set($oldPage);
+        }
+    });
 </script>
 
 <main>
@@ -67,7 +77,7 @@
                         </div>
                     </li>
                     <li class="mobile-links__item" data-collapse-item>
-                        <div class="mobile-links__item-title"><a href="" class="mobile-links__item-link">Categories</a>
+                        <div class="mobile-links__item-title"><a href="javascript;:" class="mobile-links__item-link">Categories</a>
                             <button class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
                                     class="mobile-links__item-arrow" width="12px" height="7px">
                                     <use xlink:href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
@@ -75,7 +85,7 @@
                         <div class="mobile-links__item-sub-links" data-collapse-content>
                             <ul class="mobile-links mobile-links--level--1">
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href=""
+                                    <div class="mobile-links__item-title"><a href="javascript;:"
                                             class="mobile-links__item-link">Power Tools</a> <button
                                             class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
                                                 class="mobile-links__item-arrow" width="12px" height="7px">
@@ -84,26 +94,26 @@
                                     <div class="mobile-links__item-sub-links" data-collapse-content>
                                         <ul class="mobile-links mobile-links--level--2">
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href=""
+                                                <div class="mobile-links__item-title"><a href="javascript;:"
                                                         class="mobile-links__item-link">Engravers</a></div>
                                             </li>
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href=""
+                                                <div class="mobile-links__item-title"><a href="javascript;:"
                                                         class="mobile-links__item-link">Wrenches</a></div>
                                             </li>
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href=""
+                                                <div class="mobile-links__item-title"><a href="javascript;:"
                                                         class="mobile-links__item-link">Wall Chaser</a></div>
                                             </li>
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href=""
+                                                <div class="mobile-links__item-title"><a href="javascript;:"
                                                         class="mobile-links__item-link">Pneumatic Tools</a></div>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href=""
+                                    <div class="mobile-links__item-title"><a href="javascript;:"
                                             class="mobile-links__item-link">Machine Tools</a> <button
                                             class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
                                                 class="mobile-links__item-arrow" width="12px" height="7px">
@@ -112,27 +122,27 @@
                                     <div class="mobile-links__item-sub-links" data-collapse-content>
                                         <ul class="mobile-links mobile-links--level--2">
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href=""
+                                                <div class="mobile-links__item-title"><a href="javascript;:"
                                                         class="mobile-links__item-link">Thread Cutting</a></div>
                                             </li>
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href=""
+                                                <div class="mobile-links__item-title"><a href="javascript;:"
                                                         class="mobile-links__item-link">Chip Blowers</a></div>
                                             </li>
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href=""
+                                                <div class="mobile-links__item-title"><a href="javascript;:"
                                                         class="mobile-links__item-link">Sharpening Machines</a></div>
                                             </li>
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href=""
+                                                <div class="mobile-links__item-title"><a href="javascript;:"
                                                         class="mobile-links__item-link">Pipe Cutters</a></div>
                                             </li>
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href=""
+                                                <div class="mobile-links__item-title"><a href="javascript;:"
                                                         class="mobile-links__item-link">Slotting machines</a></div>
                                             </li>
                                             <li class="mobile-links__item" data-collapse-item>
-                                                <div class="mobile-links__item-title"><a href=""
+                                                <div class="mobile-links__item-title"><a href="javascript;:"
                                                         class="mobile-links__item-link">Lathes</a></div>
                                             </li>
                                         </ul>
@@ -309,7 +319,7 @@
                         </div>
                     </li>
                     <li class="mobile-links__item" data-collapse-item>
-                        <div class="mobile-links__item-title"><a href="" class="mobile-links__item-link">Pages</a>
+                        <div class="mobile-links__item-title"><a href="javascript;:" class="mobile-links__item-link">Pages</a>
                             <button class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
                                     class="mobile-links__item-arrow" width="12px" height="7px">
                                     <use xlink:href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
@@ -361,19 +371,19 @@
                         <div class="mobile-links__item-sub-links" data-collapse-content>
                             <ul class="mobile-links mobile-links--level--1">
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="" class="mobile-links__item-link">€
+                                    <div class="mobile-links__item-title"><a href="javascript;:" class="mobile-links__item-link">€
                                             Euro</a></div>
                                 </li>
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="" class="mobile-links__item-link">£
+                                    <div class="mobile-links__item-title"><a href="javascript;:" class="mobile-links__item-link">£
                                             Pound Sterling</a></div>
                                 </li>
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="" class="mobile-links__item-link">$
+                                    <div class="mobile-links__item-title"><a href="javascript;:" class="mobile-links__item-link">$
                                             US Dollar</a></div>
                                 </li>
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href="" class="mobile-links__item-link">₽
+                                    <div class="mobile-links__item-title"><a href="javascript;:" class="mobile-links__item-link">₽
                                             Russian Ruble</a></div>
                                 </li>
                             </ul>
@@ -389,23 +399,23 @@
                         <div class="mobile-links__item-sub-links" data-collapse-content>
                             <ul class="mobile-links mobile-links--level--1">
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href=""
+                                    <div class="mobile-links__item-title"><a href="javascript;:"
                                             class="mobile-links__item-link">English</a></div>
                                 </li>
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href=""
+                                    <div class="mobile-links__item-title"><a href="javascript;:"
                                             class="mobile-links__item-link">French</a></div>
                                 </li>
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href=""
+                                    <div class="mobile-links__item-title"><a href="javascript;:"
                                             class="mobile-links__item-link">German</a></div>
                                 </li>
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href=""
+                                    <div class="mobile-links__item-title"><a href="javascript;:"
                                             class="mobile-links__item-link">Russian</a></div>
                                 </li>
                                 <li class="mobile-links__item" data-collapse-item>
-                                    <div class="mobile-links__item-title"><a href=""
+                                    <div class="mobile-links__item-title"><a href="javascript;:"
                                             class="mobile-links__item-link">Italian</a></div>
                                 </li>
                             </ul>

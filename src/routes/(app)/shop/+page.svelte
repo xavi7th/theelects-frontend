@@ -1,6 +1,12 @@
 <script lang="ts">
+    import { oldPage } from '../../../stores/ChangeStore';
 
+    $oldPage = 'shop';
 </script>
+
+<svelte:head>
+    <script async src="/js/main.js"></script>
+</svelte:head>
 
 <main>
     <div class="products-view__list products-list" data-layout="grid-3-sidebar" data-with-features="false"

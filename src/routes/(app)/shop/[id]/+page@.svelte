@@ -1,6 +1,12 @@
 <script lang="ts">
+    import { oldPage } from '../../../../stores/ChangeStore';
 
+    $oldPage = 'shop id';
 </script>
+
+<svelte:head>
+    <script async src="/js/main.js"></script>
+</svelte:head>
 
 <main>
     <div class="page-header">

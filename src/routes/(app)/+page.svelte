@@ -1,6 +1,13 @@
 <script lang="ts">
     import Slideshow from "$lib/components/partials/Slideshow.svelte";
+    import { oldPage } from '../../stores/ChangeStore';
+
+    $oldPage = 'home';
 </script>
+
+<svelte:head>
+    <script async src="/js/main.js"></script>
+</svelte:head>
 
 <main>
     <Slideshow />
