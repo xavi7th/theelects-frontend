@@ -89,84 +89,88 @@
     /*
     // block brands carousel
     */
-    $(function() {
-        $('.block-brands__slider .owl-carousel').owlCarousel({
-            nav: false,
-            dots: false,
-            loop: true,
-            rtl: isRTL(),
-            responsive: {
-                1200: {
-                    items: 6
-                },
-                992: {
-                    items: 5
-                },
-                768: {
-                    items: 4
-                },
-                576: {
-                    items: 3
-                },
-                0: {
-                    items: 2
+    setTimeout(() => {
+        $(function() {
+            $('.block-brands__slider .owl-carousel').owlCarousel({
+                nav: false,
+                dots: false,
+                loop: true,
+                rtl: isRTL(),
+                responsive: {
+                    1200: {
+                        items: 6
+                    },
+                    992: {
+                        items: 5
+                    },
+                    768: {
+                        items: 4
+                    },
+                    576: {
+                        items: 3
+                    },
+                    0: {
+                        items: 2
+                    }
                 }
-            }
+            });
         });
-    });
+    }, 5000)
 
 
     /*
     // block posts carousel
     */
-    $(function() {
-        $('.block-posts').each(function() {
-            const layout = $(this).data('layout');
-            const options = {
-                margin: 30,
-                nav: false,
-                dots: false,
-                loop: true,
-                rtl: isRTL()
-            };
-            const layoutOptions = {
-                'grid-nl': {
-
-                    responsive: {
-                        992: {
-                            items: 3
-                        },
-                        768: {
-                            items: 2
-                        },
-                        0: {
-                            items: 1
+    setTimeout(() => {
+        $(function() {
+            $('.block-posts').each(function() {
+                const layout = $(this).data('layout');
+                const options = {
+                    margin: 30,
+                    nav: false,
+                    dots: false,
+                    loop: true,
+                    rtl: isRTL()
+                };
+                const layoutOptions = {
+                    'grid-nl': {
+    
+                        responsive: {
+                            992: {
+                                items: 3
+                            },
+                            768: {
+                                items: 2
+                            },
+                            0: {
+                                items: 1
+                            }
+                        }
+                    },
+                    'list-sm': {
+                        responsive: {
+                            992: {
+                                items: 2
+                            },
+                            0: {
+                                items: 1
+                            }
                         }
                     }
-                },
-                'list-sm': {
-                    responsive: {
-                        992: {
-                            items: 2
-                        },
-                        0: {
-                            items: 1
-                        }
-                    }
-                }
-            };
-            const owl = $('.block-posts__slider .owl-carousel');
-
-            owl.owlCarousel($.extend({}, options, layoutOptions[layout]));
-
-            $(this).find('.block-header__arrow--left').on('click', function() {
-                owl.trigger('prev.owl.carousel', [500]);
-            });
-            $(this).find('.block-header__arrow--right').on('click', function() {
-                owl.trigger('next.owl.carousel', [500]);
+                };
+                const owl = $('.block-posts__slider .owl-carousel');
+    
+                owl.owlCarousel($.extend({}, options, layoutOptions[layout]));
+    
+                $(this).find('.block-header__arrow--left').on('click', function() {
+                    owl.trigger('prev.owl.carousel', [500]);
+                });
+                $(this).find('.block-header__arrow--right').on('click', function() {
+                    owl.trigger('next.owl.carousel', [500]);
+                });
             });
         });
-    });
+    }, 2700)
 
 
     /*

@@ -3,10 +3,6 @@
     
 </script>
 
-<svelte:head>
-    <script async src="/js/main.js"></script>
-</svelte:head>
-
 <!-- .block-slideshow -->
 <div class="block-slideshow block-slideshow--layout--with-departments">
     <div class="container">
