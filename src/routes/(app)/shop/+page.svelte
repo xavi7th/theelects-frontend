@@ -1,5 +1,6 @@
 <script lang="ts">
     import { oldPage } from '../../../stores/ChangeStore';
+    import ShopFilter from "../../../lib/components/partials/ShopFilter.svelte"
 
     $oldPage = 'shop';
 </script>
@@ -8,7 +9,7 @@
     <script async src="/js/main.js"></script>
 </svelte:head>
 
-<main>
+<ShopFilter>
     <div class="products-view__list products-list" data-layout="grid-3-sidebar" data-with-features="false"
         data-mobile-grid-columns="2">
         <div class="products-list__body">
@@ -2034,4 +2035,4 @@
                     </svg></a></li>
         </ul>
     </div>
-</main>
+</ShopFilter>
