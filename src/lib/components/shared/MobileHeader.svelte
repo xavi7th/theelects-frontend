@@ -1,5 +1,9 @@
 <script>
     import MobileNav from "./MobileNav.svelte";
+
+    export let data;
+
+    const header = data;
 </script>
 
 <!-- mobile site__header -->
@@ -73,5 +77,5 @@
 </header>
 <!-- mobile site__header / end -->
 <!-- mobilemenu -->
-<MobileNav />
+<MobileNav data="{header}" />
 <!-- mobilemenu / end -->

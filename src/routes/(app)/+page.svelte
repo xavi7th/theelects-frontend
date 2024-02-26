@@ -1,7 +1,5 @@
 <script lang="ts">
     import Slideshow from "$lib/components/partials/Slideshow.svelte";
-    import { oldPage } from "../../stores/ChangeStore";
-    import { store_brief_info } from "../../stores/DashboardStore";
     import Card from "../../lib/components/partials/Card.svelte";
     import Bestseller from "../../lib/components/partials/Bestseller.svelte";
     import SingleBanner from "../../lib/components/partials/SingleBanner.svelte";
@@ -12,7 +10,9 @@
     import SmallCard from "../../lib/components/partials/SmallCard.svelte";
     import Carousel from "$lib/components/shared/Carousel.svelte";
 
-    $oldPage = 'home';
+    export let data;
+
+    const { information, featured_product } = data;
 </script>
 
 <!-- <svelte:head>
@@ -24,7 +24,7 @@
 <div class="block block-features block-features--layout--boxed">
     <div class="container">
         <div class="block-features__list">
-            {#each $store_brief_info as item, index}
+            {#each information as item, index}
                 <div class="block-features__item">
                     <div class="block-features__icon"><svg width="48px" height="48px"><use xlink:href="{ item.svg_link }"></use></svg></div>
                     <div class="block-features__content">
@@ -32,7 +32,7 @@
                         <div class="block-features__subtitle">{ item.description }</div>
                     </div>
                 </div>
-                {#if index != $store_brief_info.length - 1}
+                {#if index != information.length - 1}
                     <div class="block-features__divider"></div>
                 {/if}
             {/each}

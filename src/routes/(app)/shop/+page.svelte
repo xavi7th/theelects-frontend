@@ -1,8 +1,5 @@
 <script lang="ts">
-    import { oldPage } from '../../../stores/ChangeStore';
     import ShopFilter from "../../../lib/components/partials/ShopFilter.svelte"
-
-    $oldPage = 'shop';
 </script>
 
 <svelte:head>

@@ -1,12 +1,14 @@
 <script lang="ts">
-	import { header_nav, header_side_nav, header_languages, header_currencies, header_account, header_top_nav } from "../../../stores/HeaderStore";
     import { side_menu } from "../../../stores/HandEvenStore";
-    import { PUBLIC_NAME, PUBLIC_LOGO, PUBLIC_PHONE_NUMBER } from "$env/static/public"; 
     import { navigating, page } from '$app/stores';
 
     let cart_is_open:boolean = false;
     let cart_list_is_open:boolean = false;
     // let side_menu_is_open:boolean = true;
+
+    export let data;
+
+    const { navigation, desktopSideNavigation, languages, headerCurrency, headerAccount, topNavigation, phoneNumber } = data;
 
     // function
     $page.url.pathname == '/' ? $side_menu.is_open = true : $side_menu.is_open = false;
@@ -31,7 +33,7 @@
         <div class="site-header__topbar topbar">
             <div class="topbar__container container">
                 <div class="topbar__row">
-                    {#each $header_top_nav as nav (nav.id)}
+                    {#each topNavigation as nav (nav.id)}
                         <div class="topbar__item topbar__item--link">
                             <a class="topbar-link" href="{nav.url}">{nav.name}</a>
                         </div>
@@ -47,7 +49,7 @@
                                 <div class="menu menu--layout--topbar">
                                     <div class="menu__submenus-container"></div>
                                     <ul class="menu__list">
-                                        {#each $header_account as account (account.id)}
+                                        {#each headerAccount as account (account.id)}
                                             <li class="menu__item">
                                                 <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
                                                 <div class="menu__item-submenu-offset"></div><a
@@ -77,7 +79,7 @@
                                 <div class="menu menu--layout--topbar">
                                     <div class="menu__submenus-container"></div>
                                     <ul class="menu__list">
-                                        {#each $header_currencies as currency (currency.country)}
+                                        {#each headerCurrency as currency (currency.country)}
                                             <li class="menu__item">
                                                 <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
                                                 <div class="menu__item-submenu-offset"></div><a
@@ -101,7 +103,7 @@
                                 <div class="menu menu--layout--topbar menu--with-icons">
                                     <div class="menu__submenus-container"></div>
                                     <ul class="menu__list">
-                                        {#each $header_languages as language (language.name)}
+                                        {#each languages as language (language.name)}
                                             <li class="menu__item">
                                                 <!-- This is a synthetic element that allows to adjust the vertical offset of the submenu using CSS. -->
                                                     
@@ -148,7 +150,7 @@
             </div>
             <div class="site-header__phone">
                 <div class="site-header__phone-title">Customer Service</div>
-                <div class="site-header__phone-number">{PUBLIC_PHONE_NUMBER}</div>
+                <div class="site-header__phone-number">{phoneNumber}</div>
             </div>
         </div>
         <div class="site-header__nav-panel">
@@ -175,7 +177,7 @@
                                         >
                                             <div class="departments__submenus-container"></div>
                                             <ul class="departments__links">
-                                                {#each $header_side_nav as side_nav (side_nav.id)}
+                                                {#each desktopSideNavigation as side_nav (side_nav.id)}
                                                     <li class="departments__item">
                                                         <a class="departments__item-link"
                                                             href="{side_nav.url}">{ side_nav.name }
@@ -320,7 +322,7 @@
                         <!-- .nav-links -->
                         <div class="nav-panel__nav-links nav-links">
                             <ul class="nav-links__list">
-                                {#each $header_nav as nav (nav.id)}
+                                {#each navigation as nav (nav.id)}
                                     {#if nav.layout == 1}
                                         <li class="nav-links__item nav-links__item--has-submenu">
                                             <a class="nav-links__item-link" href="{nav.url}">

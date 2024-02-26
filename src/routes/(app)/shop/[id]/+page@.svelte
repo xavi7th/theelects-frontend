@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { oldPage } from '../../../../stores/ChangeStore';
+    // import { oldPage } from '../../../../stores/ChangeStore';
     import Carousel from "$lib/components/shared/Carousel.svelte";
     import Card from '$lib/components/partials/Card.svelte';
 

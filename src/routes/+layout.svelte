@@ -3,25 +3,20 @@
     import Header from "$lib/components/shared/Header.svelte";
     import MobileHeader from "$lib/components/shared/MobileHeader.svelte";
     import Footer from "$lib/components/shared/Footer.svelte";
-    import { onMount, beforeUpdate } from 'svelte';
-    import { oldPage, currentPage } from '../stores/ChangeStore';
-	import MobileNav from './../lib/components/shared/MobileNav.svelte';
+	// import MobileNav from './../lib/components/shared/MobileNav.svelte';
     import Dialog from "$lib/components/shared/Dialog.svelte";
     import QuickView from "$lib/components/shared/QuickView.svelte";
 
-    beforeUpdate(() => {
-        if ($oldPage !== $currentPage) {
-            console.log('red');
-            currentPage.set($oldPage);
-        }
-    });
+    export let data:any;
+
+    const { header } = data;
 </script>
 
 <main>
     <!-- site -->
     <div class="site">
-        <Header />
-        <MobileHeader />
+        <Header data="{header}" />
+        <MobileHeader data="{header}" />
         <div class="site__body">
             <slot />
         </div>

@@ -1,6 +1,7 @@
 <script>
-    import { header_nav, header_side_nav, header_languages, header_currencies, header_account, header_top_nav } from "../../../stores/HeaderStore";
-    import { PUBLIC_NAME, PUBLIC_LOGO, PUBLIC_PHONE_NUMBER } from "$env/static/public"; 
+    export let data;
+
+    const { navigation, headerCurrency, languages } = data;
 </script>
 
 <div class="mobilemenu">
@@ -15,7 +16,7 @@
         <div class="mobilemenu__content">
             <ul class="mobile-links mobile-links--level--0" data-collapse
                 data-collapse-opened-class="mobile-links__item--open">
-                {#each $header_nav as nav (nav.id)}
+                {#each navigation as nav (nav.id)}
                     <li class="mobile-links__item" data-collapse-item>
                         <div class="mobile-links__item-title"><a href="{nav.sub_menu ? 'javascript;:' : nav.url}" class="mobile-links__item-link">{nav.name}</a>
                             {#if nav.sub_menu}
@@ -48,7 +49,7 @@
                             </svg></button></div>
                     <div class="mobile-links__item-sub-links" data-collapse-content>
                         <ul class="mobile-links mobile-links--level--1">
-                            {#each $header_currencies as currency (currency.country)}
+                            {#each headerCurrency as currency (currency.country)}
                                 <li class="mobile-links__item" data-collapse-item>
                                     <div class="mobile-links__item-title"><a href="javascript;:" class="mobile-links__item-link">{ `${currency.sign} ${currency.name}` }</a></div>
                                 </li>
@@ -65,7 +66,7 @@
                             </svg></button></div>
                     <div class="mobile-links__item-sub-links" data-collapse-content>
                         <ul class="mobile-links mobile-links--level--1">
-                            {#each $header_languages as language (language.name)}
+                            {#each languages as language (language.name)}
                             <li class="mobile-links__item" data-collapse-item>
                                 <div class="mobile-links__item-title"><a href="javascript;:"
                                         class="mobile-links__item-link"><img
