@@ -2,8 +2,6 @@
     // import { oldPage } from '../../../../stores/ChangeStore';
     import Carousel from "$lib/components/shared/Carousel.svelte";
     import Card from '$lib/components/partials/Card.svelte';
-
-    $oldPage = 'shop id';
 </script>
 
 <svelte:head>
@@ -15,8 +13,8 @@
         <div class="page-header__breadcrumb">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a> <svg class="breadcrumb-arrow" width="6px" height="9px"><use xlink:href="/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
-                    <li class="breadcrumb-item"><a href="">Breadcrumb</a> <svg class="breadcrumb-arrow" width="6px" height="9px"><use xlink:href="/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                    <li class="breadcrumb-item"><a href="javascript;:">Home</a> <svg class="breadcrumb-arrow" width="6px" height="9px"><use xlink:href="/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                    <li class="breadcrumb-item"><a href="javascript;:">Breadcrumb</a> <svg class="breadcrumb-arrow" width="6px" height="9px"><use xlink:href="/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
                     <li class="breadcrumb-item active" aria-current="page">Brandix Screwdriver SCREW1500ACC</li>
                 </ol>
             </nav>
@@ -173,8 +171,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product__rating-legend"><a href="">7 Reviews</a><span>/</span><a
-                                href="">Write A Review</a></div>
+                        <div class="product__rating-legend"><a href="javascript;:">7 Reviews</a><span>/</span><a
+                                href="javascript;:">Write A Review</a></div>
                     </div>
                     <div class="product__description">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Curabitur ornare, mi in ornare elementum, libero nibh lacinia urna, quis
@@ -189,7 +187,7 @@
                     <ul class="product__meta">
                         <li class="product__meta-availability">Availability: <span class="text-success">In
                                 Stock</span></li>
-                        <li>Brand: <a href="">Wakita</a></li>
+                        <li>Brand: <a href="javascript;:">Wakita</a></li>
                         <li>SKU: 83690/32</li>
                     </ul>
                 </div>
@@ -201,7 +199,7 @@
                     <div class="product__prices">$1,499.00</div>
                     <!-- .product__options -->
                     <form class="product__options">
-                        <div class="form-group product__option"><label
+                        <div class="form-group product__option"><label for=""
                                 class="product__option-label">Color</label>
                             <div class="input-radio-color">
                                 <div class="input-radio-color__list"><label
@@ -220,7 +218,7 @@
                                         <span></span></label></div>
                             </div>
                         </div>
-                        <div class="form-group product__option"><label
+                        <div class="form-group product__option"><label for=""
                                 class="product__option-label">Material</label>
                             <div class="input-radio-label">
                                 <div class="input-radio-label__list"><label><input type="radio"
@@ -263,18 +261,18 @@
                 <!-- .product__end -->
                 <div class="product__footer">
                     <div class="product__tags tags">
-                        <div class="tags__list"><a href="">Mounts</a> <a href="">Electrodes</a> <a
-                                href="">Chainsaws</a></div>
+                        <div class="tags__list"><a href="javascript;:">Mounts</a> <a href="javascript;:">Electrodes</a> <a
+                                href="javascript;:">Chainsaws</a></div>
                     </div>
                     <div class="product__share-links share-links">
                         <ul class="share-links__list">
-                            <li class="share-links__item share-links__item--type--like"><a href="">Like</a>
+                            <li class="share-links__item share-links__item--type--like"><a href="javascript;:">Like</a>
                             </li>
                             <li class="share-links__item share-links__item--type--tweet"><a
-                                    href="">Tweet</a></li>
-                            <li class="share-links__item share-links__item--type--pin"><a href="">Pin It</a>
+                                    href="javascript;:">Tweet</a></li>
+                            <li class="share-links__item share-links__item--type--pin"><a href="javascript;:">Pin It</a>
                             </li>
-                            <li class="share-links__item share-links__item--type--counter"><a href="">4K</a>
+                            <li class="share-links__item share-links__item--type--counter"><a href="javascript;:">4K</a>
                             </li>
                         </ul>
                     </div>
@@ -771,7 +769,7 @@
                                 <div class="reviews-list__pagination">
                                     <ul class="pagination justify-content-center">
                                         <li class="page-item disabled"><a
-                                                class="page-link page-link--with-arrow" href=""
+                                                class="page-link page-link--with-arrow" href="javascript;:"
                                                 aria-label="Previous"><svg
                                                     class="page-link__arrow page-link__arrow--left"
                                                     aria-hidden="true" width="8px" height="13px">
@@ -779,12 +777,12 @@
                                                         xlink:href="/images/sprite.svg#arrow-rounded-left-8x13">
                                                     </use>
                                                 </svg></a></li>
-                                        <li class="page-item"><a class="page-link" href="">1</a></li>
-                                        <li class="page-item active"><a class="page-link" href="">2 <span
+                                        <li class="page-item"><a class="page-link" href="javascript;:">1</a></li>
+                                        <li class="page-item active"><a class="page-link" href="javascript;:">2 <span
                                                     class="sr-only">(current)</span></a></li>
-                                        <li class="page-item"><a class="page-link" href="">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="javascript;:">3</a></li>
                                         <li class="page-item"><a class="page-link page-link--with-arrow"
-                                                href="" aria-label="Next"><svg
+                                                href="javascript;:bind:" aria-label="Next"><svg
                                                     class="page-link__arrow page-link__arrow--right"
                                                     aria-hidden="true" width="8px" height="13px">
                                                     <use
