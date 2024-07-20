@@ -1,5 +1,5 @@
 <script>
-	import ProfileCard from "$lib/components/shared/ProfileCard.svelte";
+	import ProfileCard from "$lib/components/ProfileCard.svelte";
 </script>
 
 <ProfileCard title="Edit Profile">

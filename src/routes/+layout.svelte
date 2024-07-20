@@ -1,32 +1,35 @@
-<!-- svelte-ignore a11y-missing-attribute -->
-<script lang="ts">
-    import Header from "$lib/components/shared/Header.svelte";
-    import MobileHeader from "$lib/components/shared/MobileHeader.svelte";
-    import Footer from "$lib/components/shared/Footer.svelte";
-	// import MobileNav from './../lib/components/shared/MobileNav.svelte';
-    import Dialog from "$lib/components/shared/Dialog.svelte";
-    import QuickView from "$lib/components/shared/QuickView.svelte";
+<script>
+  import { writable } from 'svelte/store';
+	import { onMount, setContext } from 'svelte';
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import MobileHeader from '$lib/components/MobileHeader.svelte';
+	import QuickViewModal from '$lib/components/QuickViewModal.svelte';
+	import PhotoSwipeDialog from '$lib/components/PhotoSwipeDialog.svelte';
 
-    export let data:any;
+	import '$vendor/main.scss';
 
-    const { header } = data;
+	export let data;
+
+  const isMounted = writable(false);
+	const { header } = data;
+
+  setContext('isMounted', isMounted)
+
+	onMount(() => $isMounted = true);
 </script>
 
 <main>
-    <!-- site -->
-    <div class="site">
-        <Header data="{header}" />
-        <MobileHeader data="{header}" />
-        <div class="site__body">
-            <slot />
-        </div>
-    </div>
-    <Footer />
-    <!-- quickview-modal -->
-    <QuickView />
-    <!-- quickview-modal / end -->
-    <!-- photoswipe -->
-    <Dialog />
-    <!-- photoswipe / end -->
-    <!-- site / end -->
+	<div class="site">
+		<Header data={header} />
+		<MobileHeader {header} />
+		<div class="site__body">
+			<slot />
+		</div>
+	</div>
+	<Footer />
+
+	<QuickViewModal />
+
+	<PhotoSwipeDialog />
 </main>

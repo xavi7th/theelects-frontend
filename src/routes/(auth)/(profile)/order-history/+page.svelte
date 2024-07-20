@@ -1,6 +1,6 @@
-<script lang="ts">
-    import ProfileCard from "$lib/components/shared/ProfileCard.svelte";
-    import Table from "$lib/components/shared/Table.svelte";
+<script>
+  import Table from "$lib/components/Table.svelte";
+  import ProfileCard from "$lib/components/ProfileCard.svelte";
 </script>
 
 <ProfileCard title="Order History">

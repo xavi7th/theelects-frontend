@@ -1,0 +1,31 @@
+Things to ask
+
+1. Why is there quickview HTML in the layout?
+2. In app.html how do vendor files get to vendor and how does /js get to /js
+3. Explain the vite setup and workflow
+4. multiple main tags in the DOM (footer, nav etc)
+5. Why are we using stores for header_nav (HeaderStore.js)?
+6. snake_case variable and function names eg (Header.svelte) against JS camelCase conventions
+7. What is side_menu store for? (HandEvenStore)
+8. the beforeUpdate function in layout and ChangeStore in all pages, what for?
+9. How come I am not seeing the requests in the network tab?
+10. Why main.js keeps downloading even if 304 status
+11. In the server tab, bootstrap.min.css.map 404
+12. Adding of main.js in the svelte head of +page.js component
+13. Why the (app) route grouping?
+14. In the build compiled file where is the app.html?
+
+
+
+TODO:
+1. Optimize the code for toggling the menu. Use events
+2. Do a large refactor to properly format codes
+3. Read up on stores value in Sveltekit. It seems you can assign values directly to stores. example $oldPage = 'shop';
+4. Move the shop-layout_content div from shop layout into page.
+5. Refactor the shop component into components instead of layouts. Then no need to use @ layout of [id] components
+6. Remove the (app) route grouping
+7. Cart and wishlist should not be under
+8. profile should not be a route group. It should be part of the route url
+9. The profiule should have a layout for that side nav
+10. Remove scss folder from static. In fact purge static folder.
+11. Implement a bundle builder to merge the files.

@@ -1,6 +1,6 @@
-<script lang="ts">
-    import ProfileCard from "$lib/components/shared/ProfileCard.svelte";
-	import Table from "$lib/components/shared/Table.svelte";
+<script>
+    import ProfileCard from "$lib/components/ProfileCard.svelte";
+	import Table from "$lib/components/Table.svelte";
 </script>
 
 <div class="dashboard">

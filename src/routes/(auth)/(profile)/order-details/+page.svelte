@@ -1,5 +1,5 @@
-<script lang="ts">
-    import ProfileCard from "$lib/components/shared/ProfileCard.svelte";
+<script>
+    import ProfileCard from "$lib/components/ProfileCard.svelte";
 </script>
 
 <ProfileCard title="Edit Address">

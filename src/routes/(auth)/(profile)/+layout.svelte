@@ -1,8 +1,8 @@
-<script lang="ts">
-	import BreadCrumbs from "$lib/components/partials/BreadCrumbs.svelte";
-    import { page } from "$app/stores";
+<script>
+  import { page } from "$app/stores";
+	import BreadCrumbs from "$lib/components/BreadCrumbs.svelte";
 
-    export let data;
+  export let data;
 </script>
 
 
