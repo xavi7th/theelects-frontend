@@ -1,5 +1,5 @@
 <script>
-  import { writable } from 'svelte/store';
+	import { writable } from 'svelte/store';
 	import { onMount, setContext } from 'svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
@@ -11,16 +11,16 @@
 
 	export let data;
 
-  const isMounted = writable(false);
+	const isMounted = writable(false);
 	const { header } = data;
 
-  setContext('isMounted', isMounted)
+	setContext('isMounted', isMounted);
 
-	onMount(() => $isMounted = true);
+	onMount(() => ($isMounted = true));
 </script>
 
 <main>
-	<div class="site">
+	<div class="site bg-slate-100">
 		<Header data={header} />
 		<MobileHeader {header} />
 		<div class="site__body">

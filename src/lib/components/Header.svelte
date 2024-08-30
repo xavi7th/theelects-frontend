@@ -52,7 +52,7 @@
 						<div class="topbar-dropdown">
 							<button class="topbar-dropdown__btn" type="button"
 								>My Account <svg width="7px" height="5px">
-									<use xlink:href="/images/sprite.svg#arrow-rounded-down-7x5"></use>
+									<use xlink:href="/img/sprite.svg#arrow-rounded-down-7x5"></use>
 								</svg></button
 							>
 							<div class="topbar-dropdown__body">
@@ -83,7 +83,7 @@
 							<button class="topbar-dropdown__btn" type="button"
 								>Currency: <span class="topbar__item-value">NGN</span>
 								<svg width="7px" height="5px">
-									<use xlink:href="/images/sprite.svg#arrow-rounded-down-7x5"></use>
+									<use xlink:href="/img/sprite.svg#arrow-rounded-down-7x5"></use>
 								</svg></button
 							>
 							<div class="topbar-dropdown__body">
@@ -111,7 +111,7 @@
 							<button class="topbar-dropdown__btn" type="button"
 								>Language: <span class="topbar__item-value">EN</span>
 								<svg width="7px" height="5px">
-									<use xlink:href="/images/sprite.svg#arrow-rounded-down-7x5"></use>
+									<use xlink:href="/img/sprite.svg#arrow-rounded-down-7x5"></use>
 								</svg></button
 							>
 							<div class="topbar-dropdown__body">
@@ -171,7 +171,7 @@
 							/>
 							<button class="search__button search__button--type--submit" type="submit"
 								><svg width="20px" height="20px">
-									<use xlink:href="/images/sprite.svg#search-20"></use>
+									<use xlink:href="/img/sprite.svg#search-20"></use>
 								</svg></button
 							>
 							<div class="search__border"></div>
@@ -218,7 +218,7 @@
 															>{side_nav.name}
 															{#if side_nav.sub_menu}
 																<svg class="departments__item-arrow" width="6px" height="9px">
-																	<use xlink:href="/images/sprite.svg#arrow-rounded-right-6x9">
+																	<use xlink:href="/img/sprite.svg#arrow-rounded-right-6x9">
 																	</use>
 																</svg>
 															{/if}
@@ -231,7 +231,7 @@
 																<div class="megamenu megamenu--departments">
 																	<div
 																		class="megamenu__body"
-																		style="background-image: url('images/megamenu/megamenu-1.jpg');"
+																		style="background-image: url('/src/lib/images/megamenu/megamenu-1.jpg');"
 																	>
 																		<div class="row">
 																			{#each side_nav.sub_menu_list as sub_menu (sub_menu.id)}
@@ -301,7 +301,7 @@
 																					{#if sub_menu.inner_sub}
 																						<svg class="menu__item-arrow" width="6px" height="9px">
 																							<use
-																								xlink:href="/images/sprite.svg#arrow-rounded-right-6x9"
+																								xlink:href="/img/sprite.svg#arrow-rounded-right-6x9"
 																							>
 																							</use>
 																						</svg>
@@ -342,7 +342,7 @@
 								</div>
 								<button class="departments__button" on:click={toggle_side_menu}
 									><svg class="departments__button-icon" width="18px" height="14px">
-										<use xlink:href="/images/sprite.svg#menu-18x14"></use>
+										<use xlink:href="/img/sprite.svg#menu-18x14"></use>
 									</svg>
 									Shop By Category
 									<svg
@@ -356,7 +356,7 @@
 										width="9px"
 										height="6px"
 									>
-										<use xlink:href="/images/sprite.svg#arrow-rounded-down-9x6"></use>
+										<use xlink:href="/img/sprite.svg#arrow-rounded-down-9x6"></use>
 									</svg></button
 								>
 							</div>
@@ -373,7 +373,7 @@
 													{nav.name}
 													{#if nav.sub_menu}
 														<svg class="nav-links__item-arrow" width="9px" height="6px">
-															<use xlink:href="/images/sprite.svg#arrow-rounded-down-9x6"> </use>
+															<use xlink:href="/img/sprite.svg#arrow-rounded-down-9x6"> </use>
 														</svg>
 													{/if}
 												</div>
@@ -407,7 +407,7 @@
 								<a href="/wishlist" class="indicator__button"
 									><span class="indicator__area"
 										><svg width="20px" height="20px">
-											<use xlink:href="/images/sprite.svg#heart-20"></use>
+											<use xlink:href="/img/sprite.svg#heart-20"></use>
 										</svg> <span class="indicator__value">0</span></span
 									></a
 								>
@@ -416,7 +416,7 @@
 								<button on:click={toggle_cart} class="indicator__button"
 									><span class="indicator__area"
 										><svg width="20px" height="20px">
-											<use xlink:href="/images/sprite.svg#cart-20"></use>
+											<use xlink:href="/img/sprite.svg#cart-20"></use>
 										</svg> <span class="indicator__value">3</span></span
 									></button
 								>
@@ -470,7 +470,7 @@
 															on:click={toggle_cart}
 															class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"
 															><svg width="20px" height="20px">
-																<use xlink:href="/images/sprite.svg#cross-20"></use>
+																<use xlink:href="/img/sprite.svg#cross-20"></use>
 															</svg></button
 														>
 													</h3>
@@ -481,7 +481,7 @@
 												<div class="dropcart__product">
 													<div class="dropcart__product-image">
 														<a href="product.html"
-															><img src="/images/products/product-1.jpg" alt="" /></a
+															><img src="//src/lib/images/products/product-1.jpg" alt="" /></a
 														>
 													</div>
 													<div class="dropcart__product-info">
@@ -501,14 +501,14 @@
 														type="button"
 														class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"
 														><svg width="10px" height="10px">
-															<use xlink:href="/images/sprite.svg#cross-10"></use>
+															<use xlink:href="/img/sprite.svg#cross-10"></use>
 														</svg></button
 													>
 												</div>
 												<div class="dropcart__product">
 													<div class="dropcart__product-image">
 														<a href="product.html"
-															><img src="/images/products/product-1.jpg" alt="" /></a
+															><img src="//src/lib/images/products/product-1.jpg" alt="" /></a
 														>
 													</div>
 													<div class="dropcart__product-info">
@@ -528,7 +528,7 @@
 														type="button"
 														class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"
 														><svg width="10px" height="10px">
-															<use xlink:href="/images/sprite.svg#cross-10"></use>
+															<use xlink:href="/img/sprite.svg#cross-10"></use>
 														</svg></button
 													>
 												</div>
@@ -568,7 +568,7 @@
 									<a href="account-login.html" class="indicator__button"
 										><span class="indicator__area"
 											><svg width="20px" height="20px">
-												<use xlink:href="/images/sprite.svg#person-20"></use>
+												<use xlink:href="/img/sprite.svg#person-20"></use>
 											</svg></span
 										></a
 									>
@@ -608,7 +608,7 @@
 											<div class="account-menu__divider"></div>
 											<a href="account-dashboard.html" class="account-menu__user">
 												<div class="account-menu__user-avatar">
-													<img src="/images/avatars/avatar-3.jpg" alt="" />
+													<img src="//src/lib/images/avatars/avatar-3.jpg" alt="" />
 												</div>
 												<div class="account-menu__user-info">
 													<div class="account-menu__user-name">Helena Garcia</div>

@@ -5960,7 +5960,7 @@
         value: !0
     })
 });
-//# sourceMappingURL=bootstrap.bundle.min.js.map
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch

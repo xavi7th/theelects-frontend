@@ -1,6 +1,5 @@
 <script>
-  // import { oldPage } from '../../../../stores/ChangeStore';
-  import Card from '$lib/components/Card.svelte';
+  import Card from '$lib/components/MiniProductCard.svelte';
   import Carousel from "$lib/components/Carousel.svelte";
 </script>
 
@@ -13,8 +12,8 @@
         <div class="page-header__breadcrumb">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript;:">Home</a> <svg class="breadcrumb-arrow" width="6px" height="9px"><use xlink:href="/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
-                    <li class="breadcrumb-item"><a href="javascript;:">Breadcrumb</a> <svg class="breadcrumb-arrow" width="6px" height="9px"><use xlink:href="/images/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                    <li class="breadcrumb-item"><a href="javascript;:">Home</a> <svg class="breadcrumb-arrow" width="6px" height="9px"><use xlink:href="/img/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
+                    <li class="breadcrumb-item"><a href="javascript;:">Breadcrumb</a> <svg class="breadcrumb-arrow" width="6px" height="9px"><use xlink:href="/img/sprite.svg#arrow-rounded-right-6x9"></use></svg></li>
                     <li class="breadcrumb-item active" aria-current="page">Brandix Screwdriver SCREW1500ACC</li>
                 </ol>
             </nav>
@@ -30,7 +29,7 @@
                     <div class="product-gallery">
                         <div class="product-gallery__featured"><button class="product-gallery__zoom"><svg
                                     width="24px" height="24px">
-                                    <use xlink:href="/images/sprite.svg#zoom-in-24"></use>
+                                    <use xlink:href="/img/sprite.svg#zoom-in-24"></use>
                                 </svg></button>
                             <div class="owl-carousel" id="product-image"><a
                                     href="/images/products/product-16.jpg" target="_blank"><img
@@ -77,11 +76,11 @@
                     <div class="product__wishlist-compare"><button type="button"
                             class="btn btn-sm btn-light btn-svg-icon" data-toggle="tooltip"
                             data-placement="right" title="Wishlist"><svg width="16px" height="16px">
-                                <use xlink:href="/images/sprite.svg#wishlist-16"></use>
+                                <use xlink:href="/img/sprite.svg#wishlist-16"></use>
                             </svg></button> <button type="button" class="btn btn-sm btn-light btn-svg-icon"
                             data-toggle="tooltip" data-placement="right" title="Compare"><svg width="16px"
                                 height="16px">
-                                <use xlink:href="/images/sprite.svg#compare-16"></use>
+                                <use xlink:href="/img/sprite.svg#compare-16"></use>
                             </svg></button></div>
                     <h1 class="product__name">Brandix Screwdriver SCREW1500ACC</h1>
                     <div class="product__rating">
@@ -90,10 +89,10 @@
                                 <div class="rating__body"><svg class="rating__star rating__star--active"
                                         width="13px" height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="/images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="/images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -106,10 +105,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="/images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="/images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -122,10 +121,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="/images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="/images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -138,10 +137,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="/images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="/images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -154,10 +153,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="/images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="/images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -245,13 +244,13 @@
                                         type="button" class="btn btn-secondary btn-svg-icon btn-lg"
                                         data-toggle="tooltip" title="Wishlist"><svg width="16px"
                                             height="16px">
-                                            <use xlink:href="/images/sprite.svg#wishlist-16"></use>
+                                            <use xlink:href="/img/sprite.svg#wishlist-16"></use>
                                         </svg></button></div>
                                 <div class="product__actions-item product__actions-item--compare"><button
                                         type="button" class="btn btn-secondary btn-svg-icon btn-lg"
                                         data-toggle="tooltip" title="Compare"><svg width="16px"
                                             height="16px">
-                                            <use xlink:href="/images/sprite.svg#compare-16"></use>
+                                            <use xlink:href="/img/sprite.svg#compare-16"></use>
                                         </svg></button></div>
                             </div>
                         </div>
@@ -389,12 +388,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -411,12 +410,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -433,12 +432,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -455,12 +454,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -476,12 +475,12 @@
                                                                 height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -519,12 +518,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -541,12 +540,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -563,12 +562,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -584,12 +583,12 @@
                                                                 height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -605,12 +604,12 @@
                                                                 height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -649,12 +648,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -671,12 +670,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -693,12 +692,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -715,12 +714,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -737,12 +736,12 @@
                                                                 width="13px" height="12px">
                                                                 <g class="rating__fill">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal">
+                                                                        xlink:href="/img/sprite.svg#star-normal">
                                                                     </use>
                                                                 </g>
                                                                 <g class="rating__stroke">
                                                                     <use
-                                                                        xlink:href="/images/sprite.svg#star-normal-stroke">
+                                                                        xlink:href="/img/sprite.svg#star-normal-stroke">
                                                                     </use>
                                                                 </g>
                                                             </svg>
@@ -774,7 +773,7 @@
                                                     class="page-link__arrow page-link__arrow--left"
                                                     aria-hidden="true" width="8px" height="13px">
                                                     <use
-                                                        xlink:href="/images/sprite.svg#arrow-rounded-left-8x13">
+                                                        xlink:href="/img/sprite.svg#arrow-rounded-left-8x13">
                                                     </use>
                                                 </svg></a></li>
                                         <li class="page-item"><a class="page-link" href="javascript;:">1</a></li>
@@ -786,7 +785,7 @@
                                                     class="page-link__arrow page-link__arrow--right"
                                                     aria-hidden="true" width="8px" height="13px">
                                                     <use
-                                                        xlink:href="/images/sprite.svg#arrow-rounded-right-8x13">
+                                                        xlink:href="/img/sprite.svg#arrow-rounded-right-8x13">
                                                     </use>
                                                 </svg></a></li>
                                     </ul>

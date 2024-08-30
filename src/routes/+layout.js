@@ -113,8 +113,8 @@ export const load = ( async () => {
     {
       name: "English",
       abbreviation: "EN",
-      icon: "/images/languages/language-1.png",
-      icon_subset: "/images/languages/language-1.png, images/languages/language-1@2x.png 2x",
+      icon: "/src/lib/images/languages/language-1.png",
+      icon_subset: "/src/lib/images/languages/language-1.png, /src/lib/images/languages/language-1@2x.png 2x",
       selected: false,
     },
   ]

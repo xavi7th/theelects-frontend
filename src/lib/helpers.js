@@ -244,3 +244,11 @@ export const quickview = {
     };
   }
 };
+
+/** @type Record<string, string> */
+export const imgUrls = import.meta.glob( '$lib/images/**/*.{jpg,jpeg,png,gif,svg}', { eager: true, query: { url: true }, import: 'default' } );
+/** @type Record<string, CallableFunction> */
+export const imgObjs = import.meta.glob( '$lib/images/**/*.{jpg,jpeg,png,gif,svg}', { query: { enhanced: true } } );
+
+export const getImgUrl = (key) => imgUrls[key]
+export const  getImgObj = (key) => imgObjs[key]()

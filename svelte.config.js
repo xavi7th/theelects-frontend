@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-node';
+// import { sveltePreprocess } from 'svelte-preprocess';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { importAssets } from 'svelte-preprocess-import-assets'
 
@@ -12,7 +13,13 @@ const config = {
       urlFilter: (url) => /(src\/lib\/)/.test(url),
       // urlFilter: (url) => /\.(png|jpg|gif|webp)$/.test(url),
     }),
-    vitePreprocess()
+    vitePreprocess(),
+
+    // sveltePreprocess({
+    //   scss: {
+    //     prependData: `@import './src/lib/css/variables';`
+    //   }
+    // }),
   ],
    /** @type {import('@sveltejs/vite-plugin-svelte').SvelteConfig['onwarn']} */
   onwarn: (warning, handler) => {

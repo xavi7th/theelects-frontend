@@ -1,13 +1,25 @@
 <script>
-	import { onMount } from 'svelte';
   import { quickview } from "$lib/helpers";
-	import SmallCard from '$lib/components/SmallCard.svelte';
+	import { onMount, SvelteComponent } from 'svelte';
+  import Article from '$lib/components/Article.svelte';
+	import ProductCard from '$lib/components/ProductCard.svelte';
 
-	export let sectionName = '',
-		items = [],
-		filters = [];
+	export let sectionName = '', layout="grid-4", mobileGridColumns = undefined, component = 'ProductCard', carouselClass = 'block-products-carousel';
 
+  /** @type {import('$lib/types').Product[]} */
+	export let items = [];
+
+  /** @type {import('$lib/types').ProductFilter[]} */
+	export let filters = [];
+
+  /** @type HTMLElement */
 	let carousel;
+
+  /** @type Object.<string, SvelteComponent> */
+  let components = {
+    Article,
+    ProductCard
+  }
 
 	onMount(() => {
 		setTimeout(() => {
@@ -219,19 +231,21 @@
 	});
 </script>
 
-<div class="block block-products-carousel" data-layout="grid-4" bind:this={carousel}>
+<div class="block {carouselClass}" data-layout="{layout}"  data-mobile-grid-columns={mobileGridColumns} bind:this={carousel}>
 	<div class="container">
 		<div class="block-header">
 			<h3 class="block-header__title">{sectionName}</h3>
 
 			<div class="block-header__divider"></div>
 
-			<ul class="block-header__groups-list">
-				<li><button type="button" class="block-header__group block-header__group--active" data-key="">All</button></li>
-        {#each filters as filter (filter.key)}
-          <li><button type="button" class="block-header__group" data-key={filter.key}>{filter.value}</button></li>
-        {/each}
-			</ul>
+      {#if filters.length}
+        <ul class="block-header__groups-list">
+          <li><button type="button" class="block-header__group block-header__group--active" data-key="">All</button></li>
+          {#each filters as filter (filter.key)}
+            <li><button type="button" class="block-header__group" data-key={filter.key}>{filter.value}</button></li>
+          {/each}
+        </ul>
+      {/if}
 
 			<div class="block-header__arrows-list">
 				<button class="block-header__arrow block-header__arrow--left" type="button">
@@ -247,8 +261,8 @@
 		<div class="block-products-carousel__slider">
 			<div class="block-products-carousel__preloader"></div>
 			<div class="owl-carousel">
-				{#each items as product}
-					<SmallCard {product} />
+				{#each items as item}
+          <svelte:component this={components[component]} {item}/>
 				{/each}
 			</div>
 		</div>

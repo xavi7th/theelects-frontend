@@ -10,7 +10,7 @@
         <div class="mobilemenu__header">
             <div class="mobilemenu__title">Menu</div><button type="button" class="mobilemenu__close"><svg
                     width="20px" height="20px">
-                    <use xlink:href="/images/sprite.svg#cross-20"></use>
+                    <use xlink:href="/img/sprite.svg#cross-20"></use>
                 </svg></button>
         </div>
         <div class="mobilemenu__content">
@@ -22,7 +22,7 @@
                             {#if nav.sub_menu}
                                 <button class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
                                         class="mobile-links__item-arrow" width="12px" height="7px">
-                                        <use xlink:href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                        <use xlink:href="/img/sprite.svg#arrow-rounded-down-12x7"></use>
                                     </svg></button>
                             {/if}
                         </div>
@@ -45,7 +45,7 @@
                             class="mobile-links__item-link">Currency</a> <button class="mobile-links__item-toggle"
                             type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
                                 height="7px">
-                                <use xlink:href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                <use xlink:href="/img/sprite.svg#arrow-rounded-down-12x7"></use>
                             </svg></button></div>
                     <div class="mobile-links__item-sub-links" data-collapse-content>
                         <ul class="mobile-links mobile-links--level--1">
@@ -62,7 +62,7 @@
                             class="mobile-links__item-link">Language</a> <button class="mobile-links__item-toggle"
                             type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
                                 height="7px">
-                                <use xlink:href="/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                <use xlink:href="/img/sprite.svg#arrow-rounded-down-12x7"></use>
                             </svg></button></div>
                     <div class="mobile-links__item-sub-links" data-collapse-content>
                         <ul class="mobile-links mobile-links--level--1">

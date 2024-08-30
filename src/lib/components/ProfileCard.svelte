@@ -1,6 +1,6 @@
 <script>
-    export let title:string;
-    export let dasboardOrder:boolean = false;
+    export let title = '';
+    export let dasboardOrder = false;
 </script>
 
 <div class="card" class:dashboard__orders={dasboardOrder}>

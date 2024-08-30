@@ -84,39 +84,6 @@
     } );
   }, 3500 )
 
-
-  /*
-  // block brands carousel
-  */
-  setTimeout( () => {
-    $( function () {
-      $( '.block-brands__slider .owl-carousel' ).owlCarousel( {
-        nav: false,
-        dots: false,
-        loop: true,
-        rtl: isRTL(),
-        responsive: {
-          1200: {
-            items: 6
-          },
-          992: {
-            items: 5
-          },
-          768: {
-            items: 4
-          },
-          576: {
-            items: 3
-          },
-          0: {
-            items: 2
-          }
-        }
-      } );
-    } );
-  }, 5000 )
-
-
   /*
   // block posts carousel
   */
