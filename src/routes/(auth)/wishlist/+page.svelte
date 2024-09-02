@@ -10,11 +10,11 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a> <svg class="breadcrumb-arrow"
                             width="6px" height="9px">
-                            <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use>
+                            <use xlink:href="/img/sprite.svg#arrow-rounded-right-6x9"></use>
                         </svg></li>
                     <li class="breadcrumb-item"><a href="">Breadcrumb</a> <svg class="breadcrumb-arrow"
                             width="6px" height="9px">
-                            <use xlink:href="images/sprite.svg#arrow-rounded-right-6x9"></use>
+                            <use xlink:href="/img/sprite.svg#arrow-rounded-right-6x9"></use>
                         </svg></li>
                     <li class="breadcrumb-item active" aria-current="page">Wish List</li>
                 </ol>
@@ -41,7 +41,7 @@
             <tbody class="wishlist__body">
                 <tr class="wishlist__row">
                     <td class="wishlist__column wishlist__column--image"><a href=""><img
-                                src="images/products/product-1.jpg" alt=""></a></td>
+                                src="/src/lib/images/products/product-1.jpg" alt=""></a></td>
                     <td class="wishlist__column wishlist__column--product"><a href=""
                             class="wishlist__product-name">Electric Planer Brandix KL370090G 300 Watts</a>
                         <div class="wishlist__product-rating">
@@ -49,10 +49,10 @@
                                 <div class="rating__body"><svg class="rating__star rating__star--active"
                                         width="13px" height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -65,10 +65,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -81,10 +81,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -97,10 +97,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -112,10 +112,10 @@
                                         </div>
                                     </div><svg class="rating__star" width="13px" height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge">
@@ -139,12 +139,12 @@
                             class="btn btn-primary btn-sm">Add To Cart</button></td>
                     <td class="wishlist__column wishlist__column--remove"><button type="button"
                             class="btn btn-light btn-sm btn-svg-icon"><svg width="12px" height="12px">
-                                <use xlink:href="images/sprite.svg#cross-12"></use>
+                                <use xlink:href="/img/sprite.svg#cross-12"></use>
                             </svg></button></td>
                 </tr>
                 <tr class="wishlist__row">
                     <td class="wishlist__column wishlist__column--image"><a href=""><img
-                                src="images/products/product-2.jpg" alt=""></a></td>
+                                src="/src/lib/images/products/product-2.jpg" alt=""></a></td>
                     <td class="wishlist__column wishlist__column--product"><a href=""
                             class="wishlist__product-name">Undefined Tool IRadix DPS3000SY 2700 watts</a>
                         <div class="wishlist__product-rating">
@@ -152,10 +152,10 @@
                                 <div class="rating__body"><svg class="rating__star rating__star--active"
                                         width="13px" height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -168,10 +168,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -184,10 +184,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -199,10 +199,10 @@
                                         </div>
                                     </div><svg class="rating__star" width="13px" height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge">
@@ -214,10 +214,10 @@
                                         </div>
                                     </div><svg class="rating__star" width="13px" height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge">
@@ -241,12 +241,12 @@
                             class="btn btn-primary btn-sm">Add To Cart</button></td>
                     <td class="wishlist__column wishlist__column--remove"><button type="button"
                             class="btn btn-light btn-sm btn-svg-icon"><svg width="12px" height="12px">
-                                <use xlink:href="images/sprite.svg#cross-12"></use>
+                                <use xlink:href="/img/sprite.svg#cross-12"></use>
                             </svg></button></td>
                 </tr>
                 <tr class="wishlist__row">
                     <td class="wishlist__column wishlist__column--image"><a href=""><img
-                                src="images/products/product-5.jpg" alt=""></a></td>
+                                src="/src/lib/images/products/product-5.jpg" alt=""></a></td>
                     <td class="wishlist__column wishlist__column--product"><a href=""
                             class="wishlist__product-name">Brandix Router Power Tool 2017ERXPK</a>
                         <div class="wishlist__product-rating">
@@ -254,10 +254,10 @@
                                 <div class="rating__body"><svg class="rating__star rating__star--active"
                                         width="13px" height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -270,10 +270,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -286,10 +286,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -302,10 +302,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -318,10 +318,10 @@
                                     </div><svg class="rating__star rating__star--active" width="13px"
                                         height="12px">
                                         <g class="rating__fill">
-                                            <use xlink:href="images/sprite.svg#star-normal"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal"></use>
                                         </g>
                                         <g class="rating__stroke">
-                                            <use xlink:href="images/sprite.svg#star-normal-stroke"></use>
+                                            <use xlink:href="/img/sprite.svg#star-normal-stroke"></use>
                                         </g>
                                     </svg>
                                     <div class="rating__star rating__star--only-edge rating__star--active">
@@ -345,7 +345,7 @@
                             class="btn btn-primary btn-sm">Add To Cart</button></td>
                     <td class="wishlist__column wishlist__column--remove"><button type="button"
                             class="btn btn-light btn-sm btn-svg-icon"><svg width="12px" height="12px">
-                                <use xlink:href="images/sprite.svg#cross-12"></use>
+                                <use xlink:href="/img/sprite.svg#cross-12"></use>
                             </svg></button></td>
                 </tr>
             </tbody>

@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import concat from 'rollup-plugin-concat';
 import { defineConfig } from 'vitest/config';
 import { sveltekit } from '@sveltejs/kit/vite';
@@ -24,6 +26,13 @@ export default defineConfig({
     appInitHex: JSON.stringify(hex)
   },
 	plugins: [
+    {
+      name: "Cleaning assets folder",
+      async buildStart() {
+        fs.rmSync('./static/js', { recursive: true, force: true });
+        fs.mkdirSync(path.join(__dirname, 'static/js/'), { recursive: true });
+      }
+    },
     concat({
       groupedFiles: [
         {

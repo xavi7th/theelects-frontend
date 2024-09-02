@@ -32,40 +32,40 @@
                                     <use xlink:href="/img/sprite.svg#zoom-in-24"></use>
                                 </svg></button>
                             <div class="owl-carousel" id="product-image"><a
-                                    href="/images/products/product-16.jpg" target="_blank"><img
-                                        src="/images/products/product-16.jpg" alt=""> </a><a
-                                    href="/images/products/product-16-1.jpg" target="_blank"><img
-                                        src="/images/products/product-16-1.jpg" alt=""> </a>
-                                <a href="/images/products/product-16-2.jpg" target="_blank"><img
-                                        src="/images/products/product-16-2.jpg" alt=""> </a><a
-                                    href="/images/products/product-16-3.jpg" target="_blank"><img
-                                        src="/images/products/product-16-3.jpg" alt=""> </a><a
-                                    href="/images/products/product-16-4.jpg" target="_blank"><img
-                                        src="/images/products/product-16-4.jpg" alt=""></a>
+                                    href="/src/lib/images/products/product-16.jpg" target="_blank"><img
+                                        src="/src/lib/images/products/product-16.jpg" alt=""> </a><a
+                                    href="/src/lib/images/products/product-16-1.jpg" target="_blank"><img
+                                        src="/src/lib/images/products/product-16-1.jpg" alt=""> </a>
+                                <a href="/src/lib/images/products/product-16-2.jpg" target="_blank"><img
+                                        src="/src/lib/images/products/product-16-2.jpg" alt=""> </a><a
+                                    href="/src/lib/images/products/product-16-3.jpg" target="_blank"><img
+                                        src="/src/lib/images/products/product-16-3.jpg" alt=""> </a><a
+                                    href="/src/lib/images/products/product-16-4.jpg" target="_blank"><img
+                                        src="/src/lib/images/products/product-16-4.jpg" alt=""></a>
                             </div>
                         </div>
                         <div class="product-gallery__carousel">
                             <div class="owl-carousel" id="product-carousel"><a
-                                    href="/images/products/product-16.jpg"
+                                    href="/src/lib/images/products/product-16.jpg"
                                     class="product-gallery__carousel-item"><img
                                         class="product-gallery__carousel-image"
-                                        src="/images/products/product-16.jpg" alt=""> </a><a
-                                    href="/images/products/product-16-1.jpg"
+                                        src="/src/lib/images/products/product-16.jpg" alt=""> </a><a
+                                    href="/src/lib/images/products/product-16-1.jpg"
                                     class="product-gallery__carousel-item"><img
                                         class="product-gallery__carousel-image"
-                                        src="/images/products/product-16-1.jpg" alt=""> </a><a
-                                    href="/images/products/product-16-2.jpg"
+                                        src="/src/lib/images/products/product-16-1.jpg" alt=""> </a><a
+                                    href="/src/lib/images/products/product-16-2.jpg"
                                     class="product-gallery__carousel-item"><img
                                         class="product-gallery__carousel-image"
-                                        src="/images/products/product-16-2.jpg" alt=""> </a>
-                                <a href="/images/products/product-16-3.jpg"
+                                        src="/src/lib/images/products/product-16-2.jpg" alt=""> </a>
+                                <a href="/src/lib/images/products/product-16-3.jpg"
                                     class="product-gallery__carousel-item"><img
                                         class="product-gallery__carousel-image"
-                                        src="/images/products/product-16-3.jpg" alt=""> </a><a
-                                    href="/images/products/product-16-4.jpg"
+                                        src="/src/lib/images/products/product-16-3.jpg" alt=""> </a><a
+                                    href="/src/lib/images/products/product-16-4.jpg"
                                     class="product-gallery__carousel-item"><img
                                         class="product-gallery__carousel-image"
-                                        src="/images/products/product-16-4.jpg" alt=""></a>
+                                        src="/src/lib/images/products/product-16-4.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>

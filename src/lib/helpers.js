@@ -1,14 +1,19 @@
-/*
-// product gallery
-*/
+/**
+ *
+ * @param {HTMLElement} element
+ * @param {string} layout
+ */
 export const initProductGallery = function ( element, layout ) {
   layout = layout !== undefined ? layout : 'standard';
 
+  /** @type Object */
   const options = {
     dots: false,
     margin: 10,
     rtl: isRTL()
   };
+
+  /** @type Object<string, Object> */
   const layoutOptions = {
     standard: {
       responsive: {
@@ -124,6 +129,11 @@ export const initProductGallery = function ( element, layout ) {
     openPhotoSwipe( $( this ).closest( '.owl-item' ).index() );
   } );
 
+  /**
+   *
+   * @param {number} index
+   * @returns {number}
+   */
   function getIndexDependOnDir ( index ) {
     // we need to invert index id direction === 'rtl' because photoswipe do not support rtl
     if ( isRTL() ) {
@@ -133,6 +143,10 @@ export const initProductGallery = function ( element, layout ) {
     return index;
   }
 
+  /**
+   *
+   * @param {Number} index
+   */
   function openPhotoSwipe ( index ) {
     const photoSwipeImages = image.find( '.owl-item > a' ).toArray().map( function ( element ) {
       return {
@@ -180,6 +194,10 @@ export const initProductGallery = function ( element, layout ) {
     photoSwipeGallery.init();
   }
 
+  /**
+   *
+   * @param {any} el
+   */
   function syncPosition ( el ) {
     let current = el.item.index;
 

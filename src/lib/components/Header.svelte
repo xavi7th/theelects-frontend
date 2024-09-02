@@ -481,7 +481,7 @@
 												<div class="dropcart__product">
 													<div class="dropcart__product-image">
 														<a href="product.html"
-															><img src="//src/lib/images/products/product-1.jpg" alt="" /></a
+															><img src="/src/lib/images/products/product-1.jpg" alt="" /></a
 														>
 													</div>
 													<div class="dropcart__product-info">
@@ -508,7 +508,7 @@
 												<div class="dropcart__product">
 													<div class="dropcart__product-image">
 														<a href="product.html"
-															><img src="//src/lib/images/products/product-1.jpg" alt="" /></a
+															><img src="/src/lib/images/products/product-1.jpg" alt="" /></a
 														>
 													</div>
 													<div class="dropcart__product-info">
@@ -608,7 +608,7 @@
 											<div class="account-menu__divider"></div>
 											<a href="account-dashboard.html" class="account-menu__user">
 												<div class="account-menu__user-avatar">
-													<img src="//src/lib/images/avatars/avatar-3.jpg" alt="" />
+													<img src="/src/lib/images/avatars/avatar-3.jpg" alt="" />
 												</div>
 												<div class="account-menu__user-info">
 													<div class="account-menu__user-name">Helena Garcia</div>

@@ -21,19 +21,13 @@
 
 <PageInit />
 
-<Slideshow />
-
-<Features {features} />
-
-<Carousel sectionName="Featured Products" items={featured_products} {filters}/>
-
-<SingleBanner imgUrl='/src/lib/images/banners/mrwhostheboss.jpg' mobileImgUrl='/src/lib/images/banners/mrwhostheboss.jpg' />
-
-<Bestseller {bestsellers} {featured_bestseller}/>
-
-<SingleBanner imgUrl='/src/lib/images/banners/samsung-fold-5.jpg' mobileImgUrl='/src/lib/images/banners/samsung-fold-5.jpg' />
-
-<Bestseller {bestsellers} {featured_bestseller}/>
+<!-- <Slideshow /> -->
+<!-- <Features {features} /> -->
+<!-- <Carousel sectionName="Featured Products" items={featured_products} {filters}/> -->
+<!-- <SingleBanner imgUrl='/src/lib/images/banners/mrwhostheboss.jpg' mobileImgUrl='/src/lib/images/banners/mrwhostheboss.jpg' /> -->
+<!-- <Bestseller {bestsellers} {featured_bestseller}/> -->
+<!-- <SingleBanner imgUrl='/src/lib/images/banners/samsung-fold-5.jpg' mobileImgUrl='/src/lib/images/banners/samsung-fold-5.jpg' /> -->
+<!-- <Bestseller {bestsellers} {featured_bestseller}/> -->
 
 <!-- <SingleBanner imgUrl='/src/lib/images/banners/other-banner.jpg' mobileImgUrl='/src/lib/images/banners/banner-1-mobile.jpg'>
   <svelte:fragment slot="title">
@@ -103,25 +97,25 @@
     <div class="block-brands__slider">
       <div class="owl-carousel">
         <div class="block-brands__item">
-          <a href=""><img src="images/logos/logo-1.png" alt="" /></a>
+          <a href=""><img src="/src/lib/images/logos/logo-1.png" alt="" /></a>
         </div>
         <div class="block-brands__item">
-          <a href=""><img src="images/logos/logo-2.png" alt="" /></a>
+          <a href=""><img src="/src/lib/images/logos/logo-2.png" alt="" /></a>
         </div>
         <div class="block-brands__item">
-          <a href=""><img src="images/logos/logo-3.png" alt="" /></a>
+          <a href=""><img src="/src/lib/images/logos/logo-3.png" alt="" /></a>
         </div>
         <div class="block-brands__item">
-          <a href=""><img src="images/logos/logo-4.png" alt="" /></a>
+          <a href=""><img src="/src/lib/images/logos/logo-4.png" alt="" /></a>
         </div>
         <div class="block-brands__item">
-          <a href=""><img src="images/logos/logo-5.png" alt="" /></a>
+          <a href=""><img src="/src/lib/images/logos/logo-5.png" alt="" /></a>
         </div>
         <div class="block-brands__item">
-          <a href=""><img src="images/logos/logo-6.png" alt="" /></a>
+          <a href=""><img src="/src/lib/images/logos/logo-6.png" alt="" /></a>
         </div>
         <div class="block-brands__item">
-          <a href=""><img src="images/logos/logo-7.png" alt="" /></a>
+          <a href=""><img src="/src/lib/images/logos/logo-7.png" alt="" /></a>
         </div>
       </div>
     </div>

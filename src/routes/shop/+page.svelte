@@ -20,7 +20,7 @@
             <div class="product-card__badge product-card__badge--new">New</div>
           </div>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-1.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-1.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Electric Planer Brandix KL370090G 300 Watts</a></div>
@@ -154,7 +154,7 @@
             <div class="product-card__badge product-card__badge--hot">Hot</div>
           </div>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-2.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-2.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Undefined Tool IRadix DPS3000SY 2700 Watts</a></div>
@@ -285,7 +285,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-3.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-3.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Drill Screwdriver Brandix ALX7054 200 Watts</a></div>
@@ -419,7 +419,7 @@
             <div class="product-card__badge product-card__badge--sale">Sale</div>
           </div>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-4.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-4.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Drill Series 3 Brandix KSR4590PQS 1500 Watts</a></div>
@@ -550,7 +550,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-5.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-5.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Brandix Router Power Tool 2017ERXPK</a></div>
@@ -681,7 +681,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-6.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-6.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Brandix Drilling Machine DM2019KW4 4kW</a></div>
@@ -812,7 +812,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-7.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-7.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Brandix Pliers</a></div>
@@ -943,7 +943,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-8.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-8.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Water Hose 40cm</a></div>
@@ -1074,7 +1074,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-9.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-9.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Spanner Wrench</a></div>
@@ -1205,7 +1205,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-10.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-10.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Water Tap</a></div>
@@ -1336,7 +1336,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-11.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-11.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Hand Tool Kit</a></div>
@@ -1467,7 +1467,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-12.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-12.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Ash's Chainsaw 3.5kW</a></div>
@@ -1598,7 +1598,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-13.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-13.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Brandix Angle Grinder KZX3890PQW</a></div>
@@ -1729,7 +1729,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-14.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-14.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Brandix Air Compressor DELTAKX500</a></div>
@@ -1860,7 +1860,7 @@
             <span class="fake-svg-icon"></span>
           </button>
           <div class="product-card__image">
-            <a href="/shop/1"><img src="/images/products/product-15.jpg" alt="" /></a>
+            <a href="/shop/1"><img src="/src/lib/images/products/product-15.jpg" alt="" /></a>
           </div>
           <div class="product-card__info">
             <div class="product-card__name"><a href="/shop/1">Brandix Electric Jigsaw JIG7000BQ</a></div>

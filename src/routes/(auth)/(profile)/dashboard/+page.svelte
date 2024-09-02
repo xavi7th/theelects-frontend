@@ -6,7 +6,7 @@
 <div class="dashboard">
     <div class="dashboard__profile card profile-card">
         <div class="card-body profile-card__body">
-            <div class="profile-card__avatar"><img src="images/avatars/avatar-3.jpg" alt="">
+            <div class="profile-card__avatar"><img src="/src/lib/images/avatars/avatar-3.jpg" alt="">
             </div>
             <div class="profile-card__name">Helena Garcia</div>
             <div class="profile-card__email">stroyka@example.com</div>
