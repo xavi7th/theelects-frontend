@@ -36,7 +36,7 @@
 </script>
 
 {#if brand_logos.length}
-  <div class="block block-brands mb-2">
+  <div class="block block-brands mb-12">
     <div class="container">
       <div class="block-header">
         <h3 class="block-header__title">Top Brands</h3>

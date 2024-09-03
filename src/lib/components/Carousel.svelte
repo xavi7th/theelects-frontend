@@ -1,12 +1,13 @@
 <script>
   import { quickview } from "$lib/helpers";
 	import { onMount, SvelteComponent } from 'svelte';
-  import Article from '$lib/components/Article.svelte';
+  import NewsArticle from '$lib/components/NewsArticle.svelte';
 	import ProductCard from '$lib/components/ProductCard.svelte';
+	import DoubledProductCard from '$lib/components/DoubledProductCard.svelte';
 
 	export let sectionName = '', layout="grid-4", mobileGridColumns = undefined, component = 'ProductCard', carouselClass = 'block-products-carousel';
 
-  /** @type {import('$lib/types').Product[]} */
+  /** @type {import('$lib/types').Product[] | import('$lib/types').NewsArticle[]} */
 	export let items = [];
 
   /** @type {import('$lib/types').ProductFilter[]} */
@@ -17,8 +18,9 @@
 
   /** @type Object.<string, SvelteComponent> */
   let components = {
-    Article,
-    ProductCard
+    NewsArticle,
+    ProductCard,
+    DoubledProductCard
   }
 
 	onMount(() => {
@@ -35,6 +37,56 @@
 				rtl: false
 			};
 			const layoutOptions = {
+				list: {
+					responsive: {
+						1200: {
+							items: 2,
+							margin: 14
+						},
+						992: {
+							items: 2,
+							margin: 10
+						},
+						768: {
+							items: 1,
+							margin: 10
+						},
+						576: {
+							items: 1,
+							margin: 10
+						},
+						475: {
+							items: 1,
+							margin: 10
+						},
+						0: {
+							items: 1
+						}
+					}
+				},
+        'list-sm': {
+          responsive: {
+            992: {
+              items: 2
+            },
+            0: {
+              items: 1
+            }
+          }
+        },
+        'grid-nl': {
+          responsive: {
+            992: {
+              items: 3
+            },
+            768: {
+              items: 2
+            },
+            0: {
+              items: 1
+            }
+          }
+        },
 				'grid-4': {
 					responsive: {
 						1200: {

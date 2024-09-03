@@ -9,7 +9,7 @@
 
 <div class="block block-banner">
 	<div class="container">
-		<div style="display: grid;grid-template-columns: 1fr 1fr;grid-gap: 10px;">
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
 			<SmallBanner {imgUrl} {mobileImgUrl} {url}/>
 
       {#if imgUrl2}

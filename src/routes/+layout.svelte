@@ -20,7 +20,7 @@
 </script>
 
 <main>
-	<div class="site bg-slate-100">
+	<div class="site bg-gray-50">
 		<Header data={header} />
 		<MobileHeader {header} />
 		<div class="site__body">

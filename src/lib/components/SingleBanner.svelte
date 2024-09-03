@@ -29,13 +29,13 @@
 			<div class="block-banner__image block-banner__image--desktop" style="background-image: url('{ getImgUrl(imgUrl) }')"></div>
 			<div class="block-banner__image block-banner__image--mobile" style="background-image: url('{ getImgUrl(mobileImgUrl) }')"></div>
 
-			<div class="block-banner__title">
+			<div class="block-banner__title z-10">
 				<slot name="title"><!--Hundreds<br class="block-banner__mobile-br" />Hand Tools--></slot>
 			</div>
-			<div class="block-banner__text">
+			<div class="block-banner__text z-10">
 				<slot name="text"><!--Hammers, Chisels, Universal Pliers, Nippers, Jigsaws, Saws--></slot>
 			</div>
-			<div class="block-banner__button"><span class="btn btn-sm btn-primary">Shop Now</span></div>
+			<div class="block-banner__button z-10"><span class="btn btn-sm btn-primary">Shop Now</span></div>
 		</a>
 	</div>
 </div>
@@ -48,6 +48,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     &.has-contents::before{
       content: "";
@@ -57,8 +58,8 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      // z-index: -1;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 10;
     }
   }
 

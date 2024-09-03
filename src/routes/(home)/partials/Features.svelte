@@ -1,4 +1,5 @@
 <script>
+  /** @type {import('$lib/types').SiteFeature[]} */
   export let features = []
 </script>
 
@@ -6,7 +7,7 @@
   <div class="container">
     <div class="block-features__list">
       {#each features as item, index}
-      <div class="block-features__item">
+      <div class="block-features__item rounded-xl border border-gray-200">
         <div class="block-features__icon">
           <svg width="48px" height="48px"><use xlink:href="{ item.svg_url }"></use></svg>
         </div>

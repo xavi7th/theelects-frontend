@@ -1,19 +1,13 @@
 export type Product = {
-  [name]: string,
-  [imgUrl]: string,
-  [tags]: Array<string>,
-  [price]: Number,
-  [reviews]: Number,
-  [rating]: Number,
-  [in_stock]: Boolean,
-  [features]: Array<String>,
-}
-
-/**
- * @extends Product
- */
-export type BestsellingProduct = {
-  sale_price: Number,
+  name: string,
+  imgUrl: string,
+  tags: Array<string>,
+  price: number,
+  reviews: number,
+  rating: number,
+  in_stock: boolean,
+  features: Array<string>,
+  sale_price: number,
 }
 
 export type ProductFilter = {
@@ -39,4 +33,18 @@ export type NewsArticle = {
   summary: string,
   imgUrl: string,
   url: string,
+}
+
+export type VideoReview = {
+  title: string,
+  created_at: string,
+  imgUrl: string,
+  url: string,
+  rating: number,
+}
+
+export type SiteFeature = {
+  title: string
+  description: string
+  svg_url: string
 }
