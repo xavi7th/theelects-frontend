@@ -3,7 +3,8 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "bunx --bun vite",
+		"dev": "vite",
+		"bun": "bunx --bun vite",
 		"build": "bunx --bun vite build",
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
