@@ -759,7 +759,7 @@
                                 <div class="widget-products__list">
                                     <div class="widget-products__item">
                                         <div class="widget-products__image"><a href="product.html"><img
-                                                    src="/src/lib/images/products/product-1.jpg" alt=""></a></div>
+                                                    src="/src/lib/images/products/phone-5.jpg" alt=""></a></div>
                                         <div class="widget-products__info">
                                             <div class="widget-products__name"><a href="product.html">Electric
                                                     Planer Brandix KL370090G 300 Watts</a></div>
@@ -768,7 +768,7 @@
                                     </div>
                                     <div class="widget-products__item">
                                         <div class="widget-products__image"><a href="product.html"><img
-                                                    src="/src/lib/images/products/product-2.jpg" alt=""></a></div>
+                                                    src="/src/lib/images/products/phone-5.jpg" alt=""></a></div>
                                         <div class="widget-products__info">
                                             <div class="widget-products__name"><a href="product.html">Undefined Tool
                                                     IRadix DPS3000SY 2700 Watts</a></div>
@@ -777,7 +777,7 @@
                                     </div>
                                     <div class="widget-products__item">
                                         <div class="widget-products__image"><a href="product.html"><img
-                                                    src="/src/lib/images/products/product-3.jpg" alt=""></a></div>
+                                                    src="/src/lib/images/products/phone-5.jpg" alt=""></a></div>
                                         <div class="widget-products__info">
                                             <div class="widget-products__name"><a href="product.html">Drill
                                                     Screwdriver Brandix ALX7054 200 Watts</a></div>
@@ -786,7 +786,7 @@
                                     </div>
                                     <div class="widget-products__item">
                                         <div class="widget-products__image"><a href="product.html"><img
-                                                    src="/src/lib/images/products/product-4.jpg" alt=""></a></div>
+                                                    src="/src/lib/images/products/phone-5.jpg" alt=""></a></div>
                                         <div class="widget-products__info">
                                             <div class="widget-products__name"><a href="product.html">Drill Series 3
                                                     Brandix KSR4590PQS 1500 Watts</a></div>
@@ -797,7 +797,7 @@
                                     </div>
                                     <div class="widget-products__item">
                                         <div class="widget-products__image"><a href="product.html"><img
-                                                    src="/src/lib/images/products/product-5.jpg" alt=""></a></div>
+                                                    src="/src/lib/images/products/phone-5.jpg" alt=""></a></div>
                                         <div class="widget-products__info">
                                             <div class="widget-products__name"><a href="product.html">Brandix Router
                                                     Power Tool 2017ERXPK</a></div>

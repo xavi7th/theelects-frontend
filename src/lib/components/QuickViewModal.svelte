@@ -53,7 +53,7 @@
                         attribute, in which case the width and height will be obtained from the naturalWidth
                         and naturalHeight property of img.product-image__img.
                         -->
-                      <a href="/src/lib/images/products/product-16.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank"><img class="product-image__img" src="/src/lib/images/products/product-16.jpg" alt="" /></a>
+                      <a href="/src/lib/images/products/phone-5.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank"><img class="product-image__img" src="/src/lib/images/products/phone-5.jpg" alt="" /></a>
                     </div>
                     <div class="product-image product-image--location--gallery">
                       <!--
@@ -64,7 +64,7 @@
                         attribute, in which case the width and height will be obtained from the naturalWidth
                         and naturalHeight property of img.product-image__img.
                         -->
-                      <a href="/src/lib/images/products/product-16-1.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank"><img class="product-image__img" src="/src/lib/images/products/product-16-1.jpg" alt="" /></a>
+                      <a href="/src/lib/images/products/phone-5.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank"><img class="product-image__img" src="/src/lib/images/products/phone-5.jpg" alt="" /></a>
                     </div>
                     <div class="product-image product-image--location--gallery">
                       <!--
@@ -75,7 +75,7 @@
                         attribute, in which case the width and height will be obtained from the naturalWidth
                         and naturalHeight property of img.product-image__img.
                         -->
-                      <a href="/src/lib/images/products/product-16-2.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank"><img class="product-image__img" src="/src/lib/images/products/product-16-2.jpg" alt="" /></a>
+                      <a href="/src/lib/images/products/phone-5.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank"><img class="product-image__img" src="/src/lib/images/products/phone-5.jpg" alt="" /></a>
                     </div>
                     <div class="product-image product-image--location--gallery">
                       <!--
@@ -86,7 +86,7 @@
                         attribute, in which case the width and height will be obtained from the naturalWidth
                         and naturalHeight property of img.product-image__img.
                         -->
-                      <a href="/src/lib/images/products/product-16-3.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank"><img class="product-image__img" src="/src/lib/images/products/product-16-3.jpg" alt="" /></a>
+                      <a href="/src/lib/images/products/phone-5.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank"><img class="product-image__img" src="/src/lib/images/products/phone-5.jpg" alt="" /></a>
                     </div>
                     <div class="product-image product-image--location--gallery">
                       <!--
@@ -97,35 +97,35 @@
                         attribute, in which case the width and height will be obtained from the naturalWidth
                         and naturalHeight property of img.product-image__img.
                         -->
-                      <a href="/src/lib/images/products/product-16-4.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank"><img class="product-image__img" src="/src/lib/images/products/product-16-4.jpg" alt="" /></a>
+                      <a href="/src/lib/images/products/phone-5.jpg" data-width="700" data-height="700" class="product-image__body" target="_blank"><img class="product-image__img" src="/src/lib/images/products/phone-5.jpg" alt="" /></a>
                     </div>
                   </div>
                 </div>
                 <div class="product-gallery__carousel">
                   <div class="owl-carousel" id="product-carousel">
-                    <a href="/src/lib/images/products/product-16.jpg" class="product-image product-gallery__carousel-item">
+                    <a href="/src/lib/images/products/phone-5.jpg" class="product-image product-gallery__carousel-item">
                       <div class="product-image__body">
-                        <img class="product-image__img product-gallery__carousel-image" src="/src/lib/images/products/product-16.jpg" alt="" />
+                        <img class="product-image__img product-gallery__carousel-image" src="/src/lib/images/products/phone-5.jpg" alt="" />
                       </div>
                     </a>
-                    <a href="/src/lib/images/products/product-16-1.jpg" class="product-image product-gallery__carousel-item">
+                    <a href="/src/lib/images/products/phone-5.jpg" class="product-image product-gallery__carousel-item">
                       <div class="product-image__body">
-                        <img class="product-image__img product-gallery__carousel-image" src="/src/lib/images/products/product-16-1.jpg" alt="" />
+                        <img class="product-image__img product-gallery__carousel-image" src="/src/lib/images/products/phone-5.jpg" alt="" />
                       </div>
                     </a>
-                    <a href="/src/lib/images/products/product-16-2.jpg" class="product-image product-gallery__carousel-item">
+                    <a href="/src/lib/images/products/phone-5.jpg" class="product-image product-gallery__carousel-item">
                       <div class="product-image__body">
-                        <img class="product-image__img product-gallery__carousel-image" src="/src/lib/images/products/product-16-2.jpg" alt="" />
+                        <img class="product-image__img product-gallery__carousel-image" src="/src/lib/images/products/phone-5.jpg" alt="" />
                       </div>
                     </a>
-                    <a href="/src/lib/images/products/product-16-3.jpg" class="product-image product-gallery__carousel-item">
+                    <a href="/src/lib/images/products/phone-5.jpg" class="product-image product-gallery__carousel-item">
                       <div class="product-image__body">
-                        <img class="product-image__img product-gallery__carousel-image" src="/src/lib/images/products/product-16-3.jpg" alt="" />
+                        <img class="product-image__img product-gallery__carousel-image" src="/src/lib/images/products/phone-5.jpg" alt="" />
                       </div>
                     </a>
-                    <a href="/src/lib/images/products/product-16-4.jpg" class="product-image product-gallery__carousel-item">
+                    <a href="/src/lib/images/products/phone-5.jpg" class="product-image product-gallery__carousel-item">
                       <div class="product-image__body">
-                        <img class="product-image__img product-gallery__carousel-image" src="/src/lib/images/products/product-16-4.jpg" alt="" />
+                        <img class="product-image__img product-gallery__carousel-image" src="/src/lib/images/products/phone-5.jpg" alt="" />
                       </div>
                     </a>
                   </div>

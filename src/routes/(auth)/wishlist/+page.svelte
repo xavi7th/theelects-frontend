@@ -41,7 +41,7 @@
             <tbody class="wishlist__body">
                 <tr class="wishlist__row">
                     <td class="wishlist__column wishlist__column--image"><a href=""><img
-                                src="/src/lib/images/products/product-1.jpg" alt=""></a></td>
+                                src="/src/lib/images/products/phone-5.jpg" alt=""></a></td>
                     <td class="wishlist__column wishlist__column--product"><a href=""
                             class="wishlist__product-name">Electric Planer Brandix KL370090G 300 Watts</a>
                         <div class="wishlist__product-rating">
@@ -144,7 +144,7 @@
                 </tr>
                 <tr class="wishlist__row">
                     <td class="wishlist__column wishlist__column--image"><a href=""><img
-                                src="/src/lib/images/products/product-2.jpg" alt=""></a></td>
+                                src="/src/lib/images/products/phone-5.jpg" alt=""></a></td>
                     <td class="wishlist__column wishlist__column--product"><a href=""
                             class="wishlist__product-name">Undefined Tool IRadix DPS3000SY 2700 watts</a>
                         <div class="wishlist__product-rating">
@@ -246,7 +246,7 @@
                 </tr>
                 <tr class="wishlist__row">
                     <td class="wishlist__column wishlist__column--image"><a href=""><img
-                                src="/src/lib/images/products/product-5.jpg" alt=""></a></td>
+                                src="/src/lib/images/products/phone-5.jpg" alt=""></a></td>
                     <td class="wishlist__column wishlist__column--product"><a href=""
                             class="wishlist__product-name">Brandix Router Power Tool 2017ERXPK</a>
                         <div class="wishlist__product-rating">
